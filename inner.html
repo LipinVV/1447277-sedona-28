@@ -21,57 +21,74 @@
   <main class="container">
     <!-- Черновик
       <h2>Инфраструктура:</h2>
-      <input type="radio" name="infrastructure" id="infrastructure-field" checked>
+      <input type="checkbox" name="infrastructure" id="infrastructure-field" checked>
       <label for="infrastructure-field">Бассейн</label>
-      <input type="radio" name="infrastructure" id="infrastructure-field">
+      <input type="checkbox" name="infrastructure" id="infrastructure-field">
       <label for="infrastructure-field">Парковка</label>
-      <input type="radio" name="infrastructure" id="infrastructure-field">
+      <input type="checkbox" name="infrastructure" id="infrastructure-field">
       <label for="infrastructure-field">Wi-Fi</label>
 
       <h2>Тип жилья:</h2>
-      <input type="radio" name="typeOfHouse" id="typeOfHouse-field" checked>
+      <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
       <label for="typeOfHouse-field">Гостиница</label>
-      <input type="radio" name="typeOfHouse" id="typeOfHouse-field" checked>
+      <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
       <label for="typeOfHouse-field">Мотель</label>
-      <input type="radio" name="typeOfHouse" id="typeOfHouse-field" checked>
+      <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
       <label for="typeOfHouse-field">Апартаменты</label>
 
+      ******!ВСТРЯЛ, ПОКА НЕ ЗНАЮ!*********
+      <div>
+      <label for="day">Стоимость в сутки(р):</label>
+      </div>
+      <div class=priceContainer>
+        <label for="dayscount">Количество дней</label>
+        0 <input type="range" id="dayscount" name="dayscount" min="0" max="4000" step="1"> 3000
+      </div>
       <div>Найдено:</div>
-
+      *************************************
     -->
     <section class="hotels">
       <ul class="hotels-navigation">
         <li>
-          <a href=""><img src="https://Amara.hotel.com/" alt="amaraResort&SPA" width="135" height="90"></a>
-          <h3 class="hotel">Amara Resort & SPA</h3>
-          <p class="typeOfHotel">Гостиница</p>
-          <p class="price">от 4000 р.</p>
-          <a href="">Подробнее</a>
-          <a href="">Забронировать</a>
-          <div id="rating_1">   
-            <span class="rating_stars">8.5</span> 
+          <div>
+            <a href=""><img src="https://Amara.hotel.com/" alt="amaraResort&SPA" width="135" height="90"></a>
+            <h3 class="hotel">Amara Resort & SPA</h3>
+            <p class="typeOfHotel">Гостиница</p>
+            <p class="price">от 4000 р.</p>
+            <a href="">Подробнее</a>
+            <a href="">Забронировать</a>
+          </div>
+          <div id="rating_1">
+            <span></span>    <!--Под звёдзы-->
+            <span class="rating_stars">Рейтинг:8.5</span> 
           </div>
         </li>
         <li>
-          <a href=""><img src="https://DesertQInn.hotel.com/" alt="desertQuailInn" width="135" height="90"></a>
-          <h3 class="hotel">Desert Quail Inn</h3>
-          <p class="typeOfHotel">Мотель</p>
-          <p class="price">от 3000 р.</p>
-          <a href="">Подробнее</a>
-          <a href="">Забронировать</a>
-          <div id="rating_2">   
-            <span class="rating_stars">8.9</span> 
+          <div>
+            <a href=""><img src="https://DesertQInn.hotel.com/" alt="desertQuailInn" width="135" height="90"></a>
+            <h3 class="hotel">Desert Quail Inn</h3>
+            <p class="typeOfHotel">Мотель</p>
+            <p class="price">от 3000 р.</p>
+            <a href="">Подробнее</a>
+            <a href="">Забронировать</a>
+          </div>
+          <div id="rating_2">
+            <span></span>    <!--Под звёдзы-->
+            <span class="rating_stars">Рейтинг:8.9</span> 
           </div>
         </li>
         <li>
-          <a href=""><img src="https://PocoDiablo.hotel.com/" alt="villasAtPocoDiablo" width="135" height="90"></a>
-          <h3 class="hotel">Desert Quail Inn</h3>
-          <p class="typeOfHotel">Апартаменты</p>
-          <p class="price">от 2000 р.</p>
-          <a href="">Подробнее</a>
-          <a href="">Забронировать</a>
-          <div id="rating_3">   
-            <span class="rating_stars">9.2</span> 
+          <div>
+            <a href=""><img src="https://PocoDiablo.hotel.com/" alt="villasAtPocoDiablo" width="135" height="90"></a>
+            <h3 class="hotel">Desert Quail Inn</h3>
+            <p class="typeOfHotel">Апартаменты</p>
+            <p class="price">от 2000 р.</p>
+            <a href="">Подробнее</a>
+            <a href="">Забронировать</a>
+          </div>
+          <div id="rating_3">
+            <span></span>  <!--Под звёдзы--> 
+            <span class="rating_stars">Рейтинг:9.2</span> 
           </div>
         </li>
       </ul>
