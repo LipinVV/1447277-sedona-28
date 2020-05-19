@@ -11,7 +11,7 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a><img src="https://Sedona.triangle.com/" alt="Логотип Седоны" width="138" height="70"></a>
+      <img src="img/logo.svg" alt="Логотип Седоны" width="138" height="70">
       <ul class="site-navigation">
         <li><a href="">Информация</a></li>
         <li><a href="">Фото и видео</a></li>
@@ -21,39 +21,50 @@
     </nav>
   </header>
   <main class="container">
-    <!-- Черновик
-      <h2>Инфраструктура:</h2>
-      <input type="checkbox" name="infrastructure" id="infrastructure-field" checked>
-      <label for="infrastructure-field">Бассейн</label>
-      <input type="checkbox" name="infrastructure" id="infrastructure-field">
-      <label for="infrastructure-field">Парковка</label>
-      <input type="checkbox" name="infrastructure" id="infrastructure-field">
-      <label for="infrastructure-field">Wi-Fi</label>
-
-      <h2>Тип жилья:</h2>
-      <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
-      <label for="typeOfHouse-field">Гостиница</label>
-      <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
-      <label for="typeOfHouse-field">Мотель</label>
-      <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
-      <label for="typeOfHouse-field">Апартаменты</label>
-
-      ******!ВСТРЯЛ, ПОКА НЕ ЗНАЮ!*********
-      <div>
-      <label for="day">Стоимость в сутки(р):</label>
-      </div>
-      <div class=priceContainer>
-        <label for="dayscount">Количество дней</label>
-        0 <input type="range" id="dayscount" name="dayscount" min="0" max="4000" step="1"> 3000
-      </div>
-      <div>Найдено:</div>
-      *************************************
+    <h2>Инфраструктура:</h2>
+    <!--
+    <input type="checkbox" name="infrastructure" id="infrastructure-field" checked>
+    <label for="infrastructure-field">Бассейн</label>
+    <input type="checkbox" name="infrastructure" id="infrastructure-field">
+    <label for="infrastructure-field">Парковка</label>
+    <input type="checkbox" name="infrastructure" id="infrastructure-field">
+    <label for="infrastructure-field">Wi-Fi</label>
     -->
+    <h2>Тип жилья:</h2>
+    <!--
+    <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
+    <label for="typeOfHouse-field">Гостиница</label>
+    <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
+    <label for="typeOfHouse-field">Мотель</label>
+    <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
+    <label for="typeOfHouse-field">Апартаменты</label>
+    -->
+    <div class=priceContainer>
+      <h2>Стоимость в сутки(р):</h2>
+      <!-- <form action=""> 
+      <label for="day"></label> 
+        ********** забыл как правильно дальше **********
+      <label for="priceCalibration"></label>
+      0 <input type="range" id="price" name="priceCalibrator" min="0" max="4000" step="1"> 3000
+      <button type="submit">Показать</button>
+      -->
+    </div>
+    <div>
+      <p>Найдено: 3</p>
+    </div>
+    <div>
+      <p>Сортировка:</p>
+      <ul class="sort">
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По рейтингу</li>
+      </ul>
+    </div>
     <section class="hotels">
       <ul class="hotels-navigation">
         <li>
           <div>
-            <a href=""><img src="https://Amara.hotel.com/" alt="amaraResort&SPA" width="135" height="90"></a>
+            <a href=""><img src="img/amararesort.jpg" alt="amaraResort&SPA" width="135" height="90"></a>
             <h3 class="hotel">Amara Resort & SPA</h3>
             <p class="typeOfHotel">Гостиница</p>
             <p class="price">от 4000 р.</p>
@@ -68,7 +79,7 @@
         </li>
         <li>
           <div>
-            <a href=""><img src="https://DesertQInn.hotel.com/" alt="desertQuailInn" width="135" height="90"></a>
+            <a href=""><img src="img/desertquail.jpg" alt="desertQuailInn" width="135" height="90"></a>
             <h3 class="hotel">Desert Quail Inn</h3>
             <p class="typeOfHotel">Мотель</p>
             <p class="price">от 3000 р.</p>
@@ -83,8 +94,8 @@
         </li>
         <li>
           <div>
-            <a href=""><img src="https://PocoDiablo.hotel.com/" alt="villasAtPocoDiablo" width="135" height="90"></a>
-            <h3 class="hotel">Desert Quail Inn</h3>
+            <a href=""><img src="img/pocodiablo.jpg" alt="villasAtPocoDiablo" width="135" height="90"></a>
+            <h3 class="hotel">Villas at Poco Diablo</h3>
             <p class="typeOfHotel">Апартаменты</p>
             <p class="price">от 2000 р.</p>
             <a href="">Подробнее</a>
@@ -104,11 +115,12 @@
       <p>#VisitSedona</p>
       <p>Тел: +7(495) 666-02-66</p>
       <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Twitter<img src="img/twitter1.svg" width="20" height="16" alt="Twitter"></a></li>
+        <li><a href="#">Facebook<img src="img/fb-icon.svg" width="20" height="16" alt="Facebook"></a></li>
+        <li><a href="#">YouTube<img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
       </ul>
-      <p><a href="https://htmlacademy.ru/intensive/htmlcss">Website HTML Academy</a></p>
+      <p>Website by<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115"
+            height="41" alt="HTML Academy Website"></a></p>
     </section>
   </footer>
 </body>
