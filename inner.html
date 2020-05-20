@@ -21,43 +21,55 @@
     </nav>
   </header>
   <main class="container">
-    <h2>Инфраструктура:</h2>
-    <!--
-    <input type="checkbox" name="infrastructure" id="infrastructure-field" checked>
-    <label for="infrastructure-field">Бассейн</label>
-    <input type="checkbox" name="infrastructure" id="infrastructure-field">
-    <label for="infrastructure-field">Парковка</label>
-    <input type="checkbox" name="infrastructure" id="infrastructure-field">
-    <label for="infrastructure-field">Wi-Fi</label>
-    -->
-    <h2>Тип жилья:</h2>
-    <!--
-    <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
-    <label for="typeOfHouse-field">Гостиница</label>
-    <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
-    <label for="typeOfHouse-field">Мотель</label>
-    <input type="checkbox" name="typeOfHouse" id="typeOfHouse-field" checked>
-    <label for="typeOfHouse-field">Апартаменты</label>
-    -->
-    <div class=priceContainer>
-      <h2>Стоимость в сутки(р):</h2>
-      <!-- <form action=""> 
-      <label for="day"></label> 
-        ********** забыл как правильно дальше **********
-      <label for="priceCalibration"></label>
-      0 <input type="range" id="price" name="priceCalibrator" min="0" max="4000" step="1"> 3000
-      <button type="submit">Показать</button>
-      -->
-    </div>
+    <form class="" method="">
+      <section class="searchingBox">
+        <fieldset class="infrastructure">
+          <h2>Инфраструктура:</h2>
+          <input type="checkbox" name="infrastructure" id="" checked>
+          <label for="">Бассейн</label>
+          <input type="checkbox" name="infrastructure" id="">
+          <label for="">Парковка</label>
+          <input type="checkbox" name="infrastructure" id="">
+          <label for="">Wi-Fi</label>
+        </fieldset>
+        <fieldset class="typeOfApartment">
+          <h2>Тип жилья:</h2>
+          <input type="checkbox" name="typeOfHouse" id="" checked>
+          <label for="">Гостиница</label>
+          <input type="checkbox" name="typeOfHouse" id="" checked>
+          <label for="">Мотель</label>
+          <input type="checkbox" name="typeOfHouse" id="" checked>
+          <label for="">Апартаменты</label>
+        </fieldset>
+        <fieldset class="pricePerDay">
+          <h2>Стоимость в сутки(р):</h2>
+          <input type="text" name="" id="" value="от 0" disabled>
+          <label for="day"></label>
+          <input type="text" name="" id="" value="до 3000" disabled>
+          <label for="day"></label>
+          <label for="priceCalibration"></label>
+          <div class="selector">
+            <div class="string"></div>
+            <span class="priceFrom"></span>
+            <span class="priceTo"></span>
+          </div>
+          <button type="submit">Показать</button>
+        </fieldset>
+      </section>
+    </form>
     <div>
       <p>Найдено: 3</p>
-    </div>
-    <div>
       <p>Сортировка:</p>
       <ul class="sort">
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По рейтингу</li>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По рейтингу</a></li>
+        <li class="raising">
+          <button id="raise"></button>
+        </li>
+        <li class="lowering">
+          <button id="low"></button>
+        </li>
       </ul>
     </div>
     <section class="hotels">
