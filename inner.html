@@ -11,7 +11,7 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны">
+      <a href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
       <ul class="site-navigation">
         <li><a href="">Информация</a></li>
         <li><a href="">Фото и видео</a></li>
@@ -21,43 +21,41 @@
     </nav>
   </header>
   <main class="container">
-    <form class="" method="">
-      <section class="searchingBox">
+    <form class="variations" action="https://echo.htmlacademy.ru/" method="post">
+      <section class="optionsToChoose">
         <fieldset class="infrastructure">
           <h2>Инфраструктура:</h2>
-          <input type="checkbox" name="infrastructure" id="" checked>
-          <label for="">Бассейн</label>
-          <input type="checkbox" name="infrastructure" id="">
-          <label for="">Парковка</label>
-          <input type="checkbox" name="infrastructure" id="">
-          <label for="">Wi-Fi</label>
+          <input type="checkbox" name="pool" id="pool" checked>
+          <label for="pool">Бассейн</label>
+          <input type="checkbox" name="parking" id="parking">
+          <label for="parking">Парковка</label>
+          <input type="checkbox" name="wiFi" id="wiFi">
+          <label for="wiFi">Wi-Fi</label>
         </fieldset>
         <fieldset class="typeOfApartment">
           <h2>Тип жилья:</h2>
-          <input type="checkbox" name="typeOfHouse" id="" checked>
-          <label for="">Гостиница</label>
-          <input type="checkbox" name="typeOfHouse" id="" checked>
-          <label for="">Мотель</label>
-          <input type="checkbox" name="typeOfHouse" id="" checked>
-          <label for="">Апартаменты</label>
+          <input type="checkbox" name="hotelType" id="hotelType" checked>
+          <label for="hotelType">Гостиница</label>
+          <input type="checkbox" name="motelType" id="motelType" checked>
+          <label for="motelType">Мотель</label>
+          <input type="checkbox" name="apartmentType" id="apartmentType" checked>
+          <label for="apartmentType">Апартаменты</label>
         </fieldset>
         <fieldset class="pricePerDay">
           <h2>Стоимость в сутки(р):</h2>
-          <input type="text" name="" id="" value="от 0" disabled>
-          <label for="day"></label>
-          <input type="text" name="" id="" value="до 3000" disabled>
-          <label for="day"></label>
-          <label for="priceCalibration"></label>
-          <div class="selector">
-            <div class="string"></div>
-            <span class="priceFrom"></span>
-            <span class="priceTo"></span>
+          <input type="text" name="priceFrom" id="priceFrom" value="от 0">
+          <label for="priceFrom"></label>
+          <input type="text" name="priceTo" id="priceTo" value="до 3000">
+          <div class="equalizer">
+            <div class="sortingPrices"></div>
+            <span class="sortPriceFrom"></span>
+            <span class="sortPriceTo"></span>
           </div>
           <button type="submit">Показать</button>
         </fieldset>
       </section>
     </form>
-    <div>
+    <div class="sortingBox">
       <p>Найдено: 3</p>
       <p>Сортировка:</p>
       <ul class="sort">
@@ -83,10 +81,9 @@
             <a href="">Подробнее</a>
             <a href="">Забронировать</a>
           </div>
-          <div id="rating_1">
-            <span></span>
-            <!--Под звёдзы-->
-            <span class="rating_stars">Рейтинг:8.5</span>
+          <div id="firstSortedRaiting">
+            <span class="starIcon"></span>
+            <span class="ratingStars">Рейтинг:8.5</span>
           </div>
         </li>
         <li>
@@ -98,10 +95,9 @@
             <a href="">Подробнее</a>
             <a href="">Забронировать</a>
           </div>
-          <div id="rating_2">
-            <span></span>
-            <!--Под звёдзы-->
-            <span class="rating_stars">Рейтинг:8.9</span>
+          <div id="secondSortedRaiting">
+            <span class="starIcon"></span>
+            <span class="ratingStars">Рейтинг:8.9</span>
           </div>
         </li>
         <li>
@@ -113,10 +109,9 @@
             <a href="">Подробнее</a>
             <a href="">Забронировать</a>
           </div>
-          <div id="rating_3">
-            <span></span>
-            <!--Под звёдзы-->
-            <span class="rating_stars">Рейтинг:9.2</span>
+          <div id="thirdSortedRaiting">
+            <span class="starIcon"></span>
+            <span class="ratingStars">Рейтинг:9.2</span>
           </div>
         </li>
       </ul>

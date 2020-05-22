@@ -55,7 +55,7 @@
       <p>Да, по нему можно пройти! Если конечно, вы осмелитесь</p>
       <div class="img-decorations"></div>
     </section>
-    <section class="reason">
+    <section class="reasons">
       <ul>
         <li class="positives">
           <h3>Небольшая площадь</h3>
@@ -79,41 +79,47 @@
       <p class="planningDates">Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button type="button">Поиск гостиницы в Седоне</button>
-      <!-- <form action="">
+      <form class="hotel-search" action="#" method="post">
         <p>
-          <label>Дата заезда:</label>
-          <input type="text" value="24 апреля 2017"
+          <label for="checkInDate">Дата заезда:</label>
+          <input type="text" id="checkInDate" value="24 апреля 2017">
+          <span class="iconCalendar"></span>
         </p>
         <p>
-          <label>Дата выезда:</label>
-          <input type="text" value="04 июля 2017"
+          <label for="checkOutDate">Дата выезда:</label>
+          <input type="text" id="checkOutDate" value="04 июля 2017">
+          <span class="iconCalendar"></span>
         </p>
         <p>
-          <label>Взрослые:</label>
-          <input type="number" value="2"
+          <label for="adults">Взрослые:</label>
+          <input type="number" id="adults" value="2">
+          <button class="reducePeople">-</button>
+          <button class="addPeople">+</button>
         </p>
         <p>
-          <label>Дети:</label>
-          <input type="number" value="0"
+          <label for="children">Дети:</label>
+          <input type="number" id="children" value="0">
+          <button class="reducePeople">-</button>
+          <button class="addPeople">+</button>
         </p>
-      <button type="submit">Найти</button>
-      </form>-->
+        <button class="findHotel" type="submit">Найти</button>
+      </form>
     </section>
     <p class="locationMap">
       <img src="img/map.png" width="1199" height="594" alt="locationOfSedona">
     </p>
   </main>
   <footer class="links">
-    <section>
+    <section class="footerInformation">
       <p>#VisitSedona</p>
       <p>Тел: +7(495) 666-02-66</p>
-      <ul>
-        <li><a href="#"><img src="img/twitter.svg" width="20" height="16" alt="Twitter"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="20" height="16" alt="Facebook"></a></li>
-        <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
+      <ul class="socialNetworksLinks">
+        <li><a class="socialNetworkTwitter" href="#"><img src="img/twitter.svg" width="20" height="16" alt="Twitter"></a></li>
+        <li><a class="socialNetworkFacebook" href="#"><img src="img/fb-icon.svg" width="20" height="16" alt="Facebook"></a></li>
+        <li><a class="socialNetworkYoutube" href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
       </ul>
-      <p> Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41"
+      <p class="copyrights"> Website by
+        <a class="copyrightsLinks" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41"
             alt="HTML Academy Website"></a>
       </p>
     </section>
