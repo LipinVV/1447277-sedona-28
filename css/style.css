@@ -1,0 +1,256 @@
+:root {
+    --basic-black: #000000;
+    --basic-white: #FFFFFF;
+    --basic-blue: #81B3D2;
+    --basic-onemore-black: #333333;
+    --basic-grey: #A9A9A9;
+    --basic-lightgrey: #F2F2F2;
+    --basic-middleblue: #23A9E1;
+    --basic-lightblue: #81B3D3;
+    --basic-chocolateblack: #231F20;
+    --basic-cacaocolor: #491213;
+    --basic-deepgrey: #766357;
+    --basic-deepgraytwo: #766458;
+    --basic-orange: #DC6243;
+    --basic-middlegrey: #EEEEEE;
+    --basic-lightorange: #F49774;
+    --basic-rose: #F4B1A4;
+    --basic-brown: #604E43;
+    --basic-browny: #503E33;
+    --basic-greytwo: #EBEBEB;
+    --basic-whitetwo: #E5E5E5;
+    --basic-bluetwo: #669EC0;
+    --basic-activeblue: #5496BD;
+  }
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+body {
+    max-width: 1220px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+            /*HEADER*/
+a {
+    text-decoration:none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+  }
+.main-navigation{
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+    background-color: transparent;
+}
+.site-navigation {
+    background-color: var(--basic-white);
+  }
+.logo-img{
+    position:absolute;
+    left: 571px;
+    top: 0px;
+}
+.welcome-main{
+    position: absolute;
+    background: no-repeat;
+    left: 411.38px;
+    top: 132.35px;
+}
+.main-navigation a:hover{
+    color: var(--basic-lightblue);
+}
+.main-navigation a:focus{
+    color: var(--basic-black)
+}
+            /*BODY*/
+/*СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ*/
+.motto{
+    padding-top: 42.5px;
+    }
+.motto p{
+    padding-top: 14px;
+    color: var(--basic-onemore-black);
+}
+/*РАССМОТРИМ 5 ПРИЧИН*/
+p.five-reasons{
+    font-style: normal;
+    font-weight: normal;
+}
+.features {
+    text-align: center;
+    padding-bottom: 51px; 
+}
+/*ЗАИНТЕРЕСОВАЛИСЬ?*/
+.invitation{
+    color: var(--basic-black);
+    font-size: 30px;
+    line-height: 24px;
+}
+/*Укажите предполагаемые даты поездки*/
+.planningDates{
+    color: var(--basic-black);
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
+}
+/*КНОПКА ПОИСК ГОСТИНИЦЫ*/
+button.searching{
+    min-width: 568px;
+    min-height: 86px;
+    background-color: var(--basic-deepgrey);
+    color: var(--basic-white);
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+button.searching:hover{
+    background-color: var(--basic-brown);
+}
+button.searching:active{
+    background-color: var(--basic-browny);
+    color: var(--basic-white); 
+    /*не пойму как сделать изменение цвета текста при нажатии*/
+}
+/*ФОРМА ПОИСКА ГОСТИНИЦЫ*/
+.hotel-search{
+    background-color: var(--basic-white);
+    min-width: 568px;
+    min-height: 395px;
+    text-align: center;
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+/*INPUT ДАТЫ ЗАЕЗДА, ВЫЕЗДА, ВЗРОСЛЫЕ И ДЕТИ*/
+.hotel-search p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+}
+.hotel-search input:hover{
+    background-color: var(--basic-greytwo);
+}
+/*САМИ ПОЛЯ ВВОДА ДАТ*/
+.hotel-search input{
+    background-color: var(--basic-lightgrey);
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-black);
+}
+.hotel-search input:focus{
+    background-color: var(--basic-white);
+    border: 2px solid var(--basic-whitetwo);
+}
+/*ИКОНКИ КАЛЕНДАРИКОВ*/
+.inputs::after{
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 23px;
+    background-image: url(img/calendar.svg);
+    background-repeat: no-repeat;
+}
+.inputs::after:hover{
+    background-color: var(--basic-black);
+}
+.inputs::after:active{
+    background-color: var(--basic-blue);
+}
+/*МИНУСИКИ И ПЛЮСИКИ*/
+/*нужно настроить их прозрачность, так как очень ярко!!!*/
+.reducePeople,
+.addPeople{
+    background-color: var(--basic-grey);
+}
+.reducePeople:hover,
+.addPeople:hover{
+    background-color: var(--basic-black);
+}
+.reducePeople:active,
+.addPeople:active{
+    background-color: var(--basic-blue);
+}
+/*КНОПКА "НАЙТИ"*/
+.findHotel {
+    background-color: var(--basic-blue);
+    min-width: 458px;
+    min-height: 58px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: var(--basic-white)
+}
+.findHotel:hover{
+    background-color: var(--basic-bluetwo);
+}
+.findHotel:active{
+    background-color: var(--basic-activeblue);
+    /*не пойму как сделать изменение цвета текста при нажатии*/
+}
+/*ПОЛЕ FOOTER*/
+.links{
+    min-width: 1200px;
+    min-height: 120px;
+}
+/*#VISIT SEDONA + TEL.*/
+.links_and_information p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+/*ФОН ПОЗАДИ СОЦСЕТЕЙ И ИХ АКТИВИЗАЦИЯ*/
+/*как их теперь на активизацию выставлять???*/
+.socialNetworkTwitter{
+    background: var(--basic-blue);
+    width: 46px;
+    height: 48px;
+}
+.socialNetworkFacebook{
+    background: var(--basic-blue);
+    width: 46px;
+    height: 48px;
+}
+.socialNetworkYoutube{
+    background: var(--basic-blue);
+    width: 46px;
+    height: 48px;
+}
+/*WEBSITE BY*/
+p.copyrights{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+}
+/*ССЫЛКА НА HTML АКАДЕМИЮ*/
+/*тут ещё может быть другой подход, нужно разобраться!!!*/
+.copyrightsLinks:hover{
+    background-color: var(--basic-bluetwo);
+}
+/*
+.copyrightsLinks:active{
+     opacity 0.3;
+}*/
