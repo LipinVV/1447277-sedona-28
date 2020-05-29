@@ -97,12 +97,14 @@ p.five-reasons{
 }
 /*ЗАИНТЕРЕСОВАЛИСЬ?*/
 .invitation{
+    text-align: center;
     color: var(--basic-black);
     font-size: 30px;
     line-height: 24px;
 }
 /*Укажите предполагаемые даты поездки*/
 .planningDates{
+    text-align: center;
     color: var(--basic-black);
     font-size: 14px;
     line-height: 24px;
@@ -126,7 +128,7 @@ button.searching:hover{
 }
 button.searching:active{
     background-color: var(--basic-browny);
-    color: var(--basic-white); 
+    color: var(--basic-white);
     /*не пойму как сделать изменение цвета текста при нажатии*/
 }
 /*ФОРМА ПОИСКА ГОСТИНИЦЫ*/
@@ -135,10 +137,10 @@ button.searching:active{
     min-width: 568px;
     min-height: 395px;
     text-align: center;
-    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 /*INPUT ДАТЫ ЗАЕЗДА, ВЫЕЗДА, ВЗРОСЛЫЕ И ДЕТИ*/
 .hotel-search p{
+    text-align: center;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -214,6 +216,7 @@ button.searching:active{
 }
 /*#VISIT SEDONA + TEL.*/
 .links_and_information p{
+    text-align: center;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -225,21 +228,19 @@ button.searching:active{
 /*как их теперь на активизацию выставлять???*/
 .socialNetworkTwitter{
     background: var(--basic-blue);
-    width: 46px;
-    height: 48px;
+    background-size: 46px 48px;
 }
 .socialNetworkFacebook{
     background: var(--basic-blue);
-    width: 46px;
-    height: 48px;
+    background-size: 46px 48px;
 }
 .socialNetworkYoutube{
     background: var(--basic-blue);
-    width: 46px;
-    height: 48px;
+    background-size: 46px 48px;
 }
 /*WEBSITE BY*/
 p.copyrights{
+    text-align: center;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -252,5 +253,65 @@ p.copyrights{
 }
 /*
 .copyrightsLinks:active{
-     opacity 0.3;
+    opacity 0.3;
 }*/
+
+/*INNER PAGE*/
+/*ЗАГОЛОВКИ ОТЕЛЕЙ*/
+h3.hotel{
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+h3.hotel:hover{
+    color: var(--basic-blue);
+}
+h3.hotel:active{
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+/*ТИП ОТЕЛЕЙ И ИХ ЦЕНЫ*/
+.typeOfHotel,
+.price{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-onemore-black);
+}
+/*ССЫЛКА "ПОДРОБНЕЕ"*/
+.more-info{
+    background-size: 110px 27px;
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+}
+.more-info:hover{
+    background-color: var(--basic-bluetwo);
+}
+.more-info:active{
+    background-color: var(--basic-activeblue);
+    /*не пойму как сделать изменение цвета текста при нажатии*/
+}
+/*ССЫЛКА "ЗАБРОНИРОВАТЬ"*/
+.order-offer{
+    background-size: 142px 27px;
+    background-color: var(--basic-deepgrey);
+    color: var(--basic-white);
+    text-align: center;
+}
+.order-offer:hover{
+    background-color: var(--basic-brown);
+}
+.order-offer:active{
+    background-color: var(--basic-browny);
+    /*не пойму как сделать изменение цвета текста при нажатии*/
+}
