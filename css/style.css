@@ -57,17 +57,18 @@ img{
     color: var(--basic-black);
     background-color: transparent;
 }
-/*не применяется черный цвет!!!!*/
+/*НАВИГАЦИЯ В ШАПКЕ*/
 .site-navigation {
     display: flex;
     align-items: center;
     margin: 0 auto;
+    padding-left: 0;
     justify-content: space-around;
     background-color: var(--basic-white);
     color: var(--basic-black);
     list-style: none;
     max-width: 1200px;
-    height: 70px;
+    height: 56px;
   }
 .logo-img{
     position:absolute;
@@ -121,17 +122,19 @@ p.five-reasons{
 /*НАСТОЯЩИЙ ГОРОДОК, БЛОК №1, СПРАВА КАРТИНКА*/
 .reasons-two
 {
-    max-width: 400px;
-    max-height: 256px;
-}
-/*КАРТИНКА НАСТОЯЩИЙ ГОРОДОК*/
-/*не отображается!!!!!*/
-.reasons{
     display: flex;
     width: 1200px;
     height: 256px;
 }
-.reason-one{
+/*КАРТИНКА НАСТОЯЩИЙ ГОРОДОК*/
+.reasons{
+    display: flex;
+    order: (-1);
+    width: 1200px;
+    height: 256px;
+}
+.reason-one,
+.else-reason{
     width: 400px;
     height: 256px;
     background-color: var(--basic-blue);
@@ -147,12 +150,14 @@ p.five-reasons{
 /*КАРТИНКА МОСТ ДЬЯВОЛА*/
 /*не отображается!!!!!*/
 .second-picture-of-reason{
+    order: -1;
     background-image: url("../img/devilsBrige.png");
     width: 800px;
     height: 256px;
 }
 /*ЗАГОЛОВКИ №1 и №2*/
-.explanations{
+.explanations
+{
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -198,13 +203,8 @@ p.five-reasons{
 }
 /*БЛОК С ЖИЛЬЕМ ЕДОЙ И СУВЕНИРАМИ*/
 .entertainment{
-    width: 1200px;
-    height: 330px;
 }
 .entertainment ul{
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
     margin: 0 auto;
     padding-left: 0;
 }
@@ -225,24 +225,41 @@ p.five-reasons{
 }
 /*РАЗМЕЩАЕМ ИКОНКИ SVG*/
 /*как и всегда - ничего не отображается!!!*/
+.entermended{
+    margin: auto;
+    width: 1200px;
+    height: 330px;
+    display: flex;
+    justify-content: space-around;
+}
+.motivation{
+}
+.recommended{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-grow: 1;
+    position: relative;
+    height: 330px;
+}
 .recommended:nth-child(1)::before{
     content: "";
     position: absolute;
-    background-image: url("img/houseIcon.svg");
+    background-image: url("../img/houseIcon.svg");
     width: 75px;
     height: 72px;
 }
 .recommended:nth-child(2)::before{
     content: "";
     position: absolute;
-    background-image: url("img/foodIcon.svg");
+    background-image: url("../img/food.svg");
     width: 75px;
     height: 72px;
 }
 .recommended:nth-child(3)::before{
     content: "";
     position: absolute;
-    background-image: url("img/souvenirIcon.svg");
+    background-image: url("../img/gift.svg");
     width: 75px;
     height: 72px;
 }
@@ -327,7 +344,7 @@ button.searching:active{
     position: absolute;
     width: 21px;
     height: 23px;
-    background-image: url("img/calendar.svg");
+    background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
 }
 .inputs::after:hover{
@@ -413,7 +430,7 @@ p.copyrights{
 .copyrights::after{
     content: "";
     position: absolute;
-    background-image: url("img/logo-htmlacademy.svg");
+    background-image: url("../img/logo-htmlacademy.svg");
     width: 113.98px;
     height: 39.78px;
 }
@@ -444,7 +461,7 @@ p.copyrights{
 .variations::before{
     content: "";
     position: absolute;
-    background-image: url("img/innerBackgroundJPG.jpg");
+    background-image: url("../img/innerBackgroundJPG.jpg");
     max-width: 768px;
     max-height: 418px;
     left: 0px;
