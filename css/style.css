@@ -391,7 +391,9 @@ p.copyrights{
 /***********************/
 /******INNER PAGE******/
 /***********************/
-
+.container{
+    background-color: var(--basic-lightorange);
+}
 /*сняты буллиты со списков на странице*/
 .sorting-options,
 .raising,
@@ -420,6 +422,82 @@ p.copyrights{
     text-transform: uppercase;
     color: var(--basic-white);
 }
+/*ЧЕКБОКСЫ*/
+/*цветовые стили не применяются; не знаю, как сделать отметки другими и увеличить*/
+input[type="checkbox"]
+{
+    border: 2px solid;
+    width: 23px;
+    height: 23px;
+    border-color: var(--basic-white);
+}
+label{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+/*стилизация автозаполнения*/
+::-webkit-input-placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+}
+/*КНОПКА "ПОКАЗАТЬ" И ЕЁ СОСТОЯНИЯ*/
+.show{
+    width: 137px;
+    height: 36px;
+    border: 2px solid var(--basic-white);
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: var(--basic-white);
+    background-color: transparent;
+    text-transform: uppercase;
+}
+.show:hover{
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+}
+.found{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+/*СОРТИРОВОЧНЫЕ ЛИНИИ*/
+.sortings,
+.sorting-options{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+/*СОРТИРОВКА ПО ЦЕНЕ*/
+.price-one{
+    color: var(--basic-blue);
+}
+/*СОРТИРОВКА ПО ТИПУ*/
+.type-one{
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+/*СОРТИРОВКА ПО РЕЙТИНГУ*/
+.raiting-one:hover{
+    color: var(--basic-blue);
+}
+.raiting-one:active{
+    color: var(--basic-black);
+}
+/*!!!!!!!!!!!!!!!!!!!!ТРЕУГОЛЬНИКИ!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 /*ЗАГОЛОВКИ ОТЕЛЕЙ*/
 h3.hotel{
     text-align: center;
