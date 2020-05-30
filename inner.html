@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -25,10 +25,9 @@
   </header>
   <main class="container">
     <form class="variations" action="https://echo.htmlacademy.ru/" method="get">
-      <!-- ВСТАВИТЬ ИЗОБРАЖЕНИЕ ЧЕРЕЗ CSS ПОТОМ <img src="img/innerBackgroundJPG.jpg" width="1200" height="217" alt="innerBackground">-->
       <section class="optionsToChoose">
         <fieldset class="infrastructure">
-          <h2>Инфраструктура:</h2>
+          <h2 class="captions">Инфраструктура:</h2>
           <input type="checkbox" name="pool" id="pool" checked>
           <label for="pool">Бассейн</label>
           <input type="checkbox" name="parking" id="parking">
@@ -37,7 +36,7 @@
           <label for="wiFi">Wi-Fi</label>
         </fieldset>
         <fieldset class="typeOfApartment">
-          <h2>Тип жилья:</h2>
+          <h2 class="captions">Тип жилья:</h2>
           <input type="checkbox" name="hotelType" id="hotelType" checked>
           <label for="hotelType">Гостиница</label>
           <input type="checkbox" name="motelType" id="motelType" checked>
@@ -46,7 +45,7 @@
           <label for="apartmentType">Апартаменты</label>
         </fieldset>
         <fieldset class="pricePerDay">
-          <h2>Стоимость в сутки(р):</h2>
+          <h2 class="captions">Стоимость в сутки(р):</h2>
           <input type="text" name="priceFrom" id="priceFrom" placeholder="от 0">
           <label for="priceFrom"></label>
           <input type="text" name="priceTo" id="priceTo" placeholder="до 3000">
@@ -63,9 +62,9 @@
       <p>Найдено: 3</p>
       <p>Сортировка:</p>
       <ul class="sort">
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По рейтингу</a></li>
+        <li class="sorting-options"><a href="#">По цене</a></li>
+        <li class="sorting-options"><a href="#">По типу</a></li>
+        <li class="sorting-options"><a href="#">По рейтингу</a></li>
         <li class="raising">
           <button type="button" id="raise"><span class="visually-hidden">сортировка по возрастанию</span></button>
         </li>
@@ -77,7 +76,7 @@
     <section class="hotels">
       <ul class="hotels-navigation">
         <li>
-          <div>
+          <div class="choices">
             <a href=""><img src="img/amararesort.jpg" width="135" height="90" alt="amaraResort&SPA"></a>
             <h3 class="hotel">Amara Resort & SPA</h3>
             <p class="typeOfHotel">Гостиница</p>
@@ -91,7 +90,7 @@
           </div>
         </li>
         <li>
-          <div>
+          <div class="choices">
             <a href=""><img src="img/desertquail.jpg" width="135" height="90" alt="desertQuailInn"></a>
             <h3 class="hotel">Desert Quail Inn</h3>
             <p class="typeOfHotel">Мотель</p>
@@ -105,7 +104,7 @@
           </div>
         </li>
         <li>
-          <div>
+          <div class="choices">
             <a href=""><img src="img/pocodiablo.jpg" width="135" height="90" alt="villasAtPocoDiablo"></a>
             <h3 class="hotel">Villas at Poco Diablo</h3>
             <p class="typeOfHotel">Апартаменты</p>

@@ -391,6 +391,35 @@ p.copyrights{
 /***********************/
 /******INNER PAGE******/
 /***********************/
+
+/*сняты буллиты со списков на странице*/
+.sorting-options,
+.raising,
+.lowering,
+.hotels-navigation,
+.links_and_information li
+{
+    list-style: none;
+}
+/*УСТАНОВКА ИЗОБРАЖЕНИЯ ПОЗАДИ ФОРМЫ*/
+.variations::before{
+    content: "";
+    position: absolute;
+    background-image: url("img/innerBackgroundJPG.jpg");
+    max-width: 768px;
+    max-height: 418px;
+    left: 0px;
+    top: 0px;
+}
+/*ЗАГОЛОВКИ СЕКЦИЙ БРОНИРОВАНИЯ*/
+.captions{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
 /*ЗАГОЛОВКИ ОТЕЛЕЙ*/
 h3.hotel{
     text-align: center;
