@@ -263,6 +263,15 @@ p.five-reasons{
     width: 75px;
     height: 72px;
 }
+.reasons-other{
+    background-color: var(--basic-middlegrey);
+    width: 1200px;
+    height: 256px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+}
 /*РЕКОМЕНДАЦИИ ПОД ЗАГОЛОВКАМИ*/
 .motivation{
     text-align: center;
