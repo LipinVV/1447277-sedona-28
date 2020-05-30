@@ -30,10 +30,10 @@
     margin: -1px;
   }
 body {
-    max-width: 1220px;
+    min-width: 1220px;
     margin: 0;
     padding: 0;
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -57,8 +57,11 @@ img{
     color: var(--basic-black);
     background-color: transparent;
 }
+/*не применяется черный цвет!!!!*/
 .site-navigation {
     background-color: var(--basic-white);
+    color: var(--basic-black);
+    list-style: none;
   }
 .logo-img{
     position:absolute;
@@ -75,7 +78,8 @@ img{
     color: var(--basic-lightblue);
 }
 .main-navigation a:focus{
-    color: var(--basic-black)
+    color: var(--basic-black);
+    opacity: 0.3;
 }
             /*BODY*/
 /*СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ*/
@@ -94,6 +98,124 @@ p.five-reasons{
 .features {
     text-align: center;
     padding-bottom: 51px; 
+}
+/*НАСТОЯЩИЙ ГОРОДОК, БЛОК №1, СПРАВА КАРТИНКА*/
+.reasons,
+.reasons-two
+{
+    max-width: 400px;
+    max-height: 256px;
+    background-color: var(--basic-blue);
+}
+/*КАРТИНКА НАСТОЯЩИЙ ГОРОДОК*/
+/*не отображается!!!!!*/
+.first-picture-of-reason::after{
+    content: "";
+    position: absolute;
+    background-image: url("img/trueCity.png");
+    width: 800px;
+    height: 256px;
+}
+/*КАРТИНКА МОСТ ДЬЯВОЛА*/
+/*не отображается!!!!!*/
+.second-picture-of-reason::after{
+    content: "";
+    position: absolute;
+    background-image: url("img/devilsBrige.png");
+    width: 800px;
+    height: 256px;
+}
+/*ЗАГОЛОВКИ №1 и №2*/
+.explanations{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+/*СПАНЫ С БЕЛЫМИ ЦИФРАМИ №1 и №2*/
+/*не выравниваются спаны по центру!!!*/
+.numbers{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+.numbers-other{
+    text-align: center;
+    color: var(--basic-onemore-black);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+/*ЗАВЛЕКУХИ В ПРИЧИНАХ №1 И №2*/
+.attractives{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+/*БЛОК С ЖИЛЬЕМ ЕДОЙ И СУВЕНИРАМИ*/
+.entertainment{
+    max-width: 1200px;
+    max-height: 330px;
+}
+/*убрал буллиты в списке секции*/
+.recommended,
+.positives
+{
+    list-style: none;
+}
+/*h3 ЗАГОЛОВКИ ДЛЯ ВСЕХ СЕКЦИЙ - ЖИЛЬЕ ЕДА и Т.Д.*/
+.topics{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*РАЗМЕЩАЕМ ИКОНКИ SVG*/
+/*как и всегда - ничего не отображается!!!*/
+.recommended:nth-child(1)::before{
+    content: "";
+    position: absolute;
+    background-image: url("img/houseIcon.svg");
+    width: 75px;
+    height: 72px;
+}
+.recommended:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    background-image: url("img/foodIcon.svg");
+    width: 75px;
+    height: 72px;
+}
+.recommended:nth-child(3)::before{
+    content: "";
+    position: absolute;
+    background-image: url("img/souvenirIcon.svg");
+    width: 75px;
+    height: 72px;
+}
+/*РЕКОМЕНДАЦИИ ПОД ЗАГОЛОВКАМИ*/
+.motivation{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-onemore-black);
 }
 /*ЗАИНТЕРЕСОВАЛИСЬ?*/
 .invitation{
@@ -166,7 +288,7 @@ button.searching:active{
     position: absolute;
     width: 21px;
     height: 23px;
-    background-image: url(img/calendar.svg);
+    background-image: url("img/calendar.svg");
     background-repeat: no-repeat;
 }
 .inputs::after:hover{
@@ -226,6 +348,9 @@ button.searching:active{
 }
 /*ФОН ПОЗАДИ СОЦСЕТЕЙ И ИХ АКТИВИЗАЦИЯ*/
 /*как их теперь на активизацию выставлять???*/
+.socialNetworksLinks {
+    list-style: none;
+}
 .socialNetworkTwitter{
     background: var(--basic-blue);
     background-size: 46px 48px;
@@ -246,6 +371,13 @@ p.copyrights{
     font-size: 14px;
     line-height: 26px;
 }
+.copyrights::after{
+    content: "";
+    position: absolute;
+    background-image: url("img/logo-htmlacademy.svg");
+    width: 113.98px;
+    height: 39.78px;
+}
 /*ССЫЛКА НА HTML АКАДЕМИЮ*/
 /*тут ещё может быть другой подход, нужно разобраться!!!*/
 .copyrightsLinks:hover{
@@ -254,9 +386,11 @@ p.copyrights{
 /*
 .copyrightsLinks:active{
     opacity 0.3;
-}*/
-
-/*INNER PAGE*/
+}
+*/
+/***********************/
+/******INNER PAGE******/
+/***********************/
 /*ЗАГОЛОВКИ ОТЕЛЕЙ*/
 h3.hotel{
     text-align: center;
