@@ -30,7 +30,7 @@
     margin: -1px;
   }
 body {
-    min-width: 1220px;
+    width: 1220px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
@@ -59,30 +59,49 @@ img{
 }
 /*не применяется черный цвет!!!!*/
 .site-navigation {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
     background-color: var(--basic-white);
     color: var(--basic-black);
     list-style: none;
+    max-width: 1200px;
+    height: 70px;
   }
 .logo-img{
     position:absolute;
     left: 571px;
     top: 0px;
 }
-.welcome-main{
-    position: absolute;
+.welcome-background{
+    width: 1200px;
+    height: 509px;
+    text-align: center;
+    vertical-align: middle;
+}
+.welcome-background .welcome-main{
+    padding-top: 77.35px;
     background: no-repeat;
-    left: 411.38px;
-    top: 132.35px;
+    width: 456.65px;
+    height: 350.88px;
+    display: inline-block;
+    margin: 0 auto;
 }
 .main-navigation a:hover{
     color: var(--basic-lightblue);
 }
-.main-navigation a:focus{
+.main-navigation a:active{
     color: var(--basic-black);
     opacity: 0.3;
 }
             /*BODY*/
 /*СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ*/
+.welcome-background{
+    background-image: url("../img/background.jpg");
+    width: 1200px;
+    height: 509px;
+}
 .motto{
     padding-top: 42.5px;
     }
@@ -100,28 +119,35 @@ p.five-reasons{
     padding-bottom: 51px; 
 }
 /*НАСТОЯЩИЙ ГОРОДОК, БЛОК №1, СПРАВА КАРТИНКА*/
-.reasons,
 .reasons-two
 {
     max-width: 400px;
     max-height: 256px;
-    background-color: var(--basic-blue);
 }
 /*КАРТИНКА НАСТОЯЩИЙ ГОРОДОК*/
 /*не отображается!!!!!*/
-.first-picture-of-reason::after{
-    content: "";
-    position: absolute;
-    background-image: url("img/trueCity.png");
+.reasons{
+    display: flex;
+    width: 1200px;
+    height: 256px;
+}
+.reason-one{
+    width: 400px;
+    height: 256px;
+    background-color: var(--basic-blue);
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+}
+.first-picture-of-reason{
+    background-image: url("../img/trueCity.png");
     width: 800px;
     height: 256px;
 }
 /*КАРТИНКА МОСТ ДЬЯВОЛА*/
 /*не отображается!!!!!*/
-.second-picture-of-reason::after{
-    content: "";
-    position: absolute;
-    background-image: url("img/devilsBrige.png");
+.second-picture-of-reason{
+    background-image: url("../img/devilsBrige.png");
     width: 800px;
     height: 256px;
 }
@@ -133,10 +159,11 @@ p.five-reasons{
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
+    margin: 0 auto;
+    padding-top: 47px;
     color: var(--basic-white);
 }
 /*СПАНЫ С БЕЛЫМИ ЦИФРАМИ №1 и №2*/
-/*не выравниваются спаны по центру!!!*/
 .numbers{
     font-style: normal;
     font-weight: normal;
@@ -144,6 +171,9 @@ p.five-reasons{
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 25px;
+    display: inline-block;
+    width: 100%;
     color: var(--basic-white);
 }
 .numbers-other{
@@ -162,12 +192,21 @@ p.five-reasons{
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
+    margin: 0 auto;
+    padding-top: 23px;
     color: var(--basic-white);
 }
 /*БЛОК С ЖИЛЬЕМ ЕДОЙ И СУВЕНИРАМИ*/
 .entertainment{
-    max-width: 1200px;
-    max-height: 330px;
+    width: 1200px;
+    height: 330px;
+}
+.entertainment ul{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 0;
 }
 /*убрал буллиты в списке секции*/
 .recommended,
@@ -391,9 +430,7 @@ p.copyrights{
 /***********************/
 /******INNER PAGE******/
 /***********************/
-.container{
-    background-color: var(--basic-lightorange);
-}
+
 /*сняты буллиты со списков на странице*/
 .sorting-options,
 .raising,

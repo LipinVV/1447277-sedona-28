@@ -13,7 +13,7 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <img class ="logo-img" src="img/logo.svg" aria-label="логотип Седоны" width="138" height="70" alt="Sedona's logo">
+      <img class="logo-img" src="img/logo.svg" aria-label="логотип Седоны" width="138" height="70" alt="Sedona's logo">
       <ul class="site-navigation">
         <li><a class="nav-link" href="">Информация</a></li>
         <li><a class="nav-link" href="">Фото и видео</a></li>
@@ -23,17 +23,19 @@
     </nav>
   </header>
   <main class="container">
-    <img src="img/background.jpg" width="1200" height="509" alt="Sedona's landscape">
-    <img class ="welcome-main" src="img/welcome.svg" width="457" height="351" alt="Welcome to Sedona">
+    <div class="welcome-background"><img class="welcome-main" src="img/welcome.svg" width="457" height="351"
+        alt="Welcome to Sedona"></div>
     <section class="features">
       <h1 class="motto">Седона - небольшой городок в Аризоне,<br>
         заслуживающий большего!</h1>
       <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <section class="reasons">
-      <h2 class="explanations">Настоящий городок</h2>
-      <span class="numbers">-№1-</span>
-      <p class="attractives">Седона-не аттракцион для туристов, там течёт своя жизнь</p>
+      <div class="reason-one">
+        <h2 class="explanations">Настоящий городок</h2>
+        <span class="numbers">-№1-</span>
+        <p class="attractives">Седона-не аттракцион для туристов, там течёт своя жизнь</p>
+      </div>
       <div class="first-picture-of-reason"></div>
     </section>
     <section class="entertainment">
@@ -88,7 +90,7 @@
           <input type="text" name="checkInDate" id="checkInDate" placeholder="24 апреля 2017">
           <span class="iconCalendar"></span>
         </p>
-        <p class="inputs"> 
+        <p class="inputs">
           <label for="checkOutDate">Дата выезда:</label>
           <input type="text" name="checkOutdate" id="checkOutDate" placeholder="04 июля 2017">
           <span class="iconCalendar"></span>
