@@ -72,7 +72,7 @@ img{
   }
 .logo-img{
     position: absolute; 
-    padding-left: 45%;
+    left: 540px;
     margin-left: auto;
     margin-right: auto;
     top: 0px;
@@ -207,8 +207,6 @@ p.five-reasons{
     color: var(--basic-white);
 }
 /*БЛОК С ЖИЛЬЕМ ЕДОЙ И СУВЕНИРАМИ*/
-.entertainment{
-}
 .entertainment ul{
     margin: 0 auto;
     padding-left: 0;
@@ -245,8 +243,6 @@ p.five-reasons{
     margin: 0 auto;
     width: 1200px;
     height: 330px;
-}
-.motivation{
 }
 .recommended{
     display: flex;
@@ -416,15 +412,15 @@ button.searching:active{
 /*нужно настроить их прозрачность, так как очень ярко!!!*/
 .reducePeople,
 .addPeople{
-    background-color: var(--basic-grey);
+    color: var(--basic-grey);
 }
 .reducePeople:hover,
 .addPeople:hover{
-    background-color: var(--basic-black);
+    color: var(--basic-black);
 }
 .reducePeople:active,
 .addPeople:active{
-    background-color: var(--basic-blue);
+    color: var(--basic-blue);
 }
 /*КНОПКА "НАЙТИ"*/
 .findHotel {
@@ -444,14 +440,30 @@ button.searching:active{
 }
 .findHotel:active{
     background-color: var(--basic-activeblue);
+    color: var(--basic-white);
     /*не пойму как сделать изменение цвета текста при нажатии*/
+}
+.locationMap {
+    background-image: url("../img/map.png");
+    width: 100%;
+    height: 473px;
 }
 /*ПОЛЕ FOOTER*/
 .links{
-    min-width: 1200px;
-    min-height: 120px;
+    width: 1200px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 /*#VISIT SEDONA + TEL.*/
+.links_and_information{
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    width: 1200px;
+    height: 120px;
+}
 .links_and_information p{
     text-align: center;
     font-style: normal;
@@ -464,22 +476,62 @@ button.searching:active{
 /*ФОН ПОЗАДИ СОЦСЕТЕЙ И ИХ АКТИВИЗАЦИЯ*/
 /*как их теперь на активизацию выставлять???*/
 .socialNetworksLinks {
+    display: flex;
+    width: 30%;
+    height: 120px;
     list-style: none;
 }
 .socialNetworkTwitter{
+    display: block;
+    position: relative;
     background: var(--basic-blue);
-    background-size: 46px 48px;
+    width: 46px;
+    height: 48px;
+    margin: 0 auto;
+}
+.socialNetworkTwitter::after{
+    content: "";
+    position: absolute;
+    background-image: url("../img/twitter.svg");
+    width: 17px;
+    height: 15px;
+    text-align: center;
 }
 .socialNetworkFacebook{
+    display: block;
     background: var(--basic-blue);
-    background-size: 46px 48px;
+    width: 46px;
+    height: 48px;
+}
+.socialNetworkFacebook::after{
+    content: "";
+    position: absolute;
+    background-image: url("../img/fb-icon.svg");
+    width: 17px;
+    height: 15px;
+    text-align: center;
+    background-image: no-repeat;
 }
 .socialNetworkYoutube{
+    display: block;
     background: var(--basic-blue);
-    background-size: 46px 48px;
+    width: 46px;
+    height: 48px;
+}
+.socialNetworkYoutube::after{
+    content: "";
+    position: absolute;
+    background-image: url("../img/youtube.svg");
+    width: 17px;
+    height: 15px;
+    text-align: center;
 }
 /*WEBSITE BY*/
 p.copyrights{
+    display: flex;
+    width: 30%;
+    height: 120px;
+    flex-direction: column;
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -517,14 +569,11 @@ p.copyrights{
     list-style: none;
 }
 /*УСТАНОВКА ИЗОБРАЖЕНИЯ ПОЗАДИ ФОРМЫ*/
-.variations::before{
-    content: "";
-    position: absolute;
+.variations{
     background-image: url("../img/innerBackgroundJPG.jpg");
-    max-width: 768px;
-    max-height: 418px;
-    left: 0px;
-    top: 0px;
+    background-image: no-repeat;
+    height: 217px;
+    width: 100%
 }
 /*ЗАГОЛОВКИ СЕКЦИЙ БРОНИРОВАНИЯ*/
 .captions{
