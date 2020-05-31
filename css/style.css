@@ -30,7 +30,7 @@
     margin: -1px;
   }
 body {
-    width: 1220px;
+    width: 1200px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
@@ -71,15 +71,17 @@ img{
     height: 56px;
   }
 .logo-img{
-    position:absolute;
-    left: 571px;
+    position: absolute; 
+    padding-left: 45%;
+    margin-left: auto;
+    margin-right: auto;
     top: 0px;
 }
 .welcome-background{
     width: 1200px;
     height: 509px;
+    display: block;
     text-align: center;
-    vertical-align: middle;
 }
 .welcome-background .welcome-main{
     padding-top: 77.35px;
@@ -188,6 +190,9 @@ p.five-reasons{
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 /*ЗАВЛЕКУХИ В ПРИЧИНАХ №1 И №2*/
 .attractives{
@@ -215,6 +220,15 @@ p.five-reasons{
     list-style: none;
 }
 /*h3 ЗАГОЛОВКИ ДЛЯ ВСЕХ СЕКЦИЙ - ЖИЛЬЕ ЕДА и Т.Д.*/
+.topics-first{
+    padding-top: 20%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
 .topics{
     font-style: normal;
     font-weight: bold;
@@ -226,51 +240,59 @@ p.five-reasons{
 /*РАЗМЕЩАЕМ ИКОНКИ SVG*/
 /*как и всегда - ничего не отображается!!!*/
 .entermended{
-    margin: auto;
+    display: flex;
+    align-content: stretch;
+    margin: 0 auto;
     width: 1200px;
     height: 330px;
-    display: flex;
-    justify-content: space-around;
 }
 .motivation{
 }
 .recommended{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
     flex-direction: column;
-    align-items: stretch;
-    flex-grow: 1;
-    position: relative;
     height: 330px;
 }
 .recommended:nth-child(1)::before{
+    padding-top: 15%;
     content: "";
     position: absolute;
     background-image: url("../img/houseIcon.svg");
     width: 75px;
     height: 72px;
+    background-repeat: no-repeat;
 }
 .recommended:nth-child(2)::before{
+    padding-top: 15%;
     content: "";
     position: absolute;
     background-image: url("../img/food.svg");
     width: 75px;
     height: 72px;
+    background-repeat: no-repeat;
 }
 .recommended:nth-child(3)::before{
+    padding-top: 16%;
     content: "";
     position: absolute;
     background-image: url("../img/gift.svg");
     width: 75px;
     height: 72px;
+    background-repeat: no-repeat;
 }
-.reasons-other{
+.positives-more{
     background-color: var(--basic-middlegrey);
     width: 1200px;
     height: 256px;
     display: flex;
-    justify-content: stretch;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 0;
 }
 /*РЕКОМЕНДАЦИИ ПОД ЗАГОЛОВКАМИ*/
 .motivation{
@@ -309,6 +331,8 @@ button.searching{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    display: block;
+    margin: 0 auto;
 }
 button.searching:hover{
     background-color: var(--basic-brown);
@@ -320,6 +344,9 @@ button.searching:active{
 }
 /*ФОРМА ПОИСКА ГОСТИНИЦЫ*/
 .hotel-search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--basic-white);
     min-width: 568px;
     min-height: 395px;
@@ -337,11 +364,34 @@ button.searching:active{
     background-color: var(--basic-greytwo);
 }
 /*САМИ ПОЛЯ ВВОДА ДАТ*/
-.hotel-search input{
+.count{
     background-color: var(--basic-lightgrey);
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-black);
+    width: 114px;
+    height: 38px;
+}
+.dates{
+    background-color: var(--basic-lightgrey);
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-black);
+    width: 346px;
+    height: 38px;
+}
+.dates-labels{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+.kinds{
+    flex-direction: row;
+    align-self: center;
+    flex-wrap: wrap;
 }
 .hotel-search input:focus{
     background-color: var(--basic-white);
@@ -379,8 +429,8 @@ button.searching:active{
 /*КНОПКА "НАЙТИ"*/
 .findHotel {
     background-color: var(--basic-blue);
-    min-width: 458px;
-    min-height: 58px;
+    width: 458px;
+    height: 58px;
     text-align: center;
     font-style: normal;
     font-weight: bold;
@@ -494,21 +544,13 @@ input[type="checkbox"]
     height: 23px;
     border-color: var(--basic-white);
 }
-label{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: var(--basic-white);
-}
 /*стилизация автозаполнения*/
 ::-webkit-input-placeholder {
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 14px;
-    line-height: 21px;
-    color: var(--basic-white);
+    line-height: 26px;
+    color: var(--basic-black);
 }
 /*КНОПКА "ПОКАЗАТЬ" И ЕЁ СОСТОЯНИЯ*/
 .show{

@@ -41,15 +41,15 @@
     <section class="entertainment">
       <ul class="entermended">
         <li class="recommended">
-          <h3 class="topics">Жильё</h3>
+          <h3 class="topics-first">Жильё</h3>
           <p class="motivation">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
         <li class="recommended">
-          <h3 class="topics">Еда</h3>
+          <h3 class="topics-first">Еда</h3>
           <p class="motivation">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li class="recommended">
-          <h3 class="topics">Сувениры</h3>
+          <h3 class="topics-first">Сувениры</h3>
           <p class="motivation">Не только китайского, но и местного производства!</p>
         </li>
       </ul>
@@ -63,7 +63,7 @@
       <div class="second-picture-of-reason"></div>
     </section>
     <section class="reasons-other">
-      <ul>
+      <ul class="positives-more">
         <li class="positives">
           <h3 class="topics">Небольшая площадь</h3>
           <span class="numbers-other">-№3-</span>
@@ -88,24 +88,24 @@
       <button class="searching" type="button">Поиск гостиницы в Седоне</button>
       <form class="hotel-search" action="https://echo.htmlacademy.ru/" method="post">
         <p class="inputs">
-          <label for="checkInDate">Дата заезда:</label>
-          <input type="text" name="checkInDate" id="checkInDate" placeholder="24 апреля 2017">
+          <label class="dates-labels" for="checkInDate">Дата заезда:</label>
+          <input class="dates" type="text" name="checkInDate" id="checkInDate" placeholder="24 апреля 2017">
           <span class="iconCalendar"></span>
         </p>
         <p class="inputs">
-          <label for="checkOutDate">Дата выезда:</label>
-          <input type="text" name="checkOutdate" id="checkOutDate" placeholder="04 июля 2017">
+          <label class="dates-labels" for="checkOutDate">Дата выезда:</label>
+          <input class="dates" type="text" name="checkOutdate" id="checkOutDate" placeholder="04 июля 2017">
           <span class="iconCalendar"></span>
         </p>
         <p class="kinds">
-          <label for="adults">Взрослые:</label>
-          <input type="number" name="adults" id="adults" placeholder="2">
+          <label class="dates-labels" for="adults">Взрослые:</label>
+          <input class="count" type="number" name="adults" id="adults" placeholder="2">
           <button type="button" class="reducePeople"><span class="visually-hidden">уменьшить на единицу</span>-</button>
           <button type="button" class="addPeople"><span class="visually-hidden">увеличить на единицу</span>+</button>
         </p>
         <p class="kinds">
-          <label for="children">Дети:</label>
-          <input type="number" name="children" id="children" placeholder="0">
+          <label class="dates-labels" for="children">Дети:</label>
+          <input class="count" type="number" name="children" id="children" placeholder="0">
           <button type="button" class="reducePeople"><span class="visually-hidden">уменьшить на единицу</span>-</button>
           <button type="button" class="addPeople"><span class="visually-hidden">увеличить на единицу</span>+</button>
         </p>
