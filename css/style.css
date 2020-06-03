@@ -21,6 +21,7 @@
     --basic-whitetwo: #E5E5E5;
     --basic-bluetwo: #669EC0;
     --basic-activeblue: #5496BD;
+    --basic-white-opy-03: rgb(255, 255, 255, 0.3);
   }
 .visually-hidden {
     position: absolute;
@@ -335,8 +336,7 @@ button.searching:hover{
 }
 button.searching:active{
     background-color: var(--basic-browny);
-    color: var(--basic-white);
-    /*не пойму как сделать изменение цвета текста при нажатии*/
+    color: var(--basic-white-opy-03);
 }
 /*ФОРМА ПОИСКА ГОСТИНИЦЫ*/
 .hotel-search{
