@@ -73,10 +73,11 @@ img{
     height: 56px;
   }
 .logo-img{
-    position: absolute; 
-    margin: 0 auto;
+    position: absolute;
+    top: 0;
     left: 700px;
-    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .welcome-background{
     width: 1200px;
