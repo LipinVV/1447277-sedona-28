@@ -33,7 +33,7 @@
   }
 body {
     width: 1200px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
@@ -74,9 +74,8 @@ img{
   }
 .logo-img{
     position: absolute; 
-    left: 540px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    left: 700px;
     top: 0px;
 }
 .welcome-background{
@@ -99,6 +98,9 @@ img{
 .main-navigation a:active{
     color: var(--basic-black);
     opacity: 0.3;
+}
+.nav-link:visited{
+    color: var(--basic-black);
 }
             /*BODY*/
 /*СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ*/
@@ -571,9 +573,6 @@ p.copyrights{
 /*ФОРМA*/
 .variations{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
     background-image: url("../img/innerBackgroundJPG.jpg");
     background-image: no-repeat;
     height: 217px;
@@ -581,11 +580,11 @@ p.copyrights{
 }
 .white-font{
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
     text-transform: uppercase;
-    color: var(ba);
+    color: var(--basic-white);
 }
 /*ЗАГОЛОВКИ СЕКЦИЙ БРОНИРОВАНИЯ*/
 .captions{
@@ -675,28 +674,28 @@ fieldset {
     border:0 none;
  }
 /*!ТРЕУГОЛЬНИКИ!*/
-.sortPriceFrom::after{
+.raising::after{
     content: "";
     position: absolute;
     width: 10px;
     height: 11px;
     background-image: url("../img/icon-up.svg");
 }
-.sortPriceTo::after{
+.lowering::after{
     content: "";
     position: absolute;
     width: 10px;
     height: 11px;
     background-image: url("../img/icon-down.svg");
 }
-.sortPriceFrom::after:hover{
+.raising::after:hover{
     content: "";
     position: absolute;
     width: 10px;
     height: 11px;
     background-image: url("../img/icon-uphover.svg");
 }
-.sortPriceTo::after:hover{
+.lowering::after:hover{
     content: "";
     position: absolute;
     width: 10px;
