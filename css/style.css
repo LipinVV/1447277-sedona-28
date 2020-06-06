@@ -404,8 +404,10 @@ button.searching:active{
     height: 38px;
     border: 0px;
 }
-.dates-labels,
-.dates-labels-children
+.dates-labels-one,
+.dates-labels-two,
+.dates-labels-children,
+.dates-labels-adults
 {
     width: 100px;
     font-style: normal;
@@ -416,6 +418,7 @@ button.searching:active{
     color: var(--basic-black);
     text-align: left;
 }
+
 .dates-labels-children{
     text-align: right;
     padding-right: 25px;
@@ -445,7 +448,8 @@ button.searching:active{
     border: 2px solid var(--basic-whitetwo);
 }
 /*ИКОНКИ КАЛЕНДАРИКОВ*/
-.inputs::after{
+.inputs-one::after,
+.inputs-two::after{
     content: "";
     position: absolute;
     width: 21px;
@@ -453,10 +457,12 @@ button.searching:active{
     background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
 }
-.inputs::after:hover{
+.inputs-one::after:hover,
+.inputs-two::after:hover{
     background-color: var(--basic-black);
 }
-.inputs::after:active{
+.inputs-one::after:active,
+.inputs-two::after:active{
     background-color: var(--basic-blue);
 }
 /*МИНУСИКИ И ПЛЮСИКИ*/
