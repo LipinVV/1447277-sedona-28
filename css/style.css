@@ -23,6 +23,7 @@
     --basic-activeblue: #5496BD;
     --basic-white-opy-03: rgb(255, 255, 255, 0.3);
     --basic-raiting: #666666;
+    --basic-background: #888888;
   }
 .visually-hidden {
     position: absolute;
@@ -41,10 +42,15 @@ body {
     font-weight: 700;
     color: var(--basic-black);
     text-transform: uppercase;
-    background-color: #888888;
+    background-color: var(--basic-background);
     background-position: top center;
     background-repeat: no-repeat;
   }
+.container{
+    background-color: var(--basic-white);
+    z-index: -1;
+    position: relative;
+}
             /*HEADER*/
 a {
     text-decoration:none;
@@ -137,8 +143,7 @@ p.five-reasons{
 }
 .features{
     text-align: center;
-    padding-bottom: 51px;
-    background-color: var(--basic-white);
+    padding-bottom: 51px; 
 }
 /*НАСТОЯЩИЙ ГОРОДОК, БЛОК №1, СПРАВА КАРТИНКА*/
 .reasons-two
@@ -226,9 +231,6 @@ p.five-reasons{
     color: var(--basic-white);
 }
 /*БЛОК С ЖИЛЬЕМ ЕДОЙ И СУВЕНИРАМИ*/
-.entertainment{
-    background-color: var(--basic-white);
-}
 .entertainment ul{
     margin: 0 auto;
     padding-left: 0;
@@ -336,8 +338,6 @@ p.five-reasons{
     line-height: 24px;
     font-style: normal;
     font-weight: normal;
-    background-color: var(--basic-white);
-    margin: 0 auto;
 }
 /*КНОПКА ПОИСК ГОСТИНИЦЫ*/
 button.searching{
@@ -384,12 +384,6 @@ button.searching:active{
 }
 .hotel-search input:hover{
     background-color: var(--basic-greytwo);
-}
-.invitation{
-    margin: 0 auto;
-    padding-top: 58px;
-    background-color: var(--basic-white);
-    z-index: 0;
 }
 /*САМИ ПОЛЯ ВВОДА ДАТ*/
 .count{
