@@ -48,8 +48,6 @@ body {
   }
 .container{
     background-color: var(--basic-white);
-    z-index: -1;
-    position: relative;
 }
             /*HEADER*/
 a {
@@ -366,12 +364,19 @@ button.searching:active{
     flex-direction: column;
     align-items: center;
     background-color: var(--basic-white);
-    width: 568px; /*если поменять на просто ширину - они уедут*/
-    height: 395px; /*если поменять на просто ширину - они уедут*/
+    width: 568px;
+    height: 395px; 
     text-align: center;
-    z-index: 1;
     margin: 0 auto;
     margin-bottom: 78px;
+}
+.hotel-search::before{
+    content:"";
+    position: absolute;
+    background-image: url("../img/map.png");
+    width: 1199px;
+    height: 473px;
+    z-index: -1;
 }
 /*INPUT ДАТЫ ЗАЕЗДА, ВЫЕЗДА, ВЗРОСЛЫЕ И ДЕТИ*/
 
@@ -418,7 +423,6 @@ button.searching:active{
     color: var(--basic-black);
     text-align: left;
 }
-
 .dates-labels-children{
     text-align: right;
     padding-right: 25px;
@@ -480,7 +484,7 @@ button.searching:active{
     color: var(--basic-blue);
 }
 /*КНОПКА "НАЙТИ"*/
-.findHotel {
+.findHotel{
     background-color: var(--basic-blue);
     width: 458px;
     height: 58px;
@@ -500,21 +504,12 @@ button.searching:active{
     background-color: var(--basic-activeblue);
     color: var(--basic-white-opy-03);
 }
-.hotel-search::before{
-    content:"";
-    position: absolute;
-    background-image: url("../img/map.png");
-    width: 1199px;
-    height: 473px;
-    z-index: -1;
-}
 /*ПОЛЕ FOOTER*/
 .links_and_information{
     width: 1200px;
     height: 120px;
     background-color: var(--basic-white);
     margin: 0 auto;
-    z-index: 1;
 }
 .footer-wrap{
     display: flex;
