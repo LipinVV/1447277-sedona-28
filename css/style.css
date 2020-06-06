@@ -41,7 +41,7 @@ body {
     font-weight: 700;
     color: var(--basic-black);
     text-transform: uppercase;
-    background-color: var(--basic-white);
+    background-color: #888888;
     background-position: top center;
     background-repeat: no-repeat;
   }
@@ -58,6 +58,19 @@ img{
     line-height: 26px;
     color: var(--basic-black);
     background-color: transparent;
+}
+.site-navigation li{
+    width: 20%;
+}
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2)
+{
+    text-align: left;
+}
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4)
+{
+    text-align: right;
 }
 /*НАВИГАЦИЯ В ШАПКЕ*/
 .site-navigation {
@@ -124,7 +137,8 @@ p.five-reasons{
 }
 .features{
     text-align: center;
-    padding-bottom: 51px; 
+    padding-bottom: 51px;
+    background-color: var(--basic-white);
 }
 /*НАСТОЯЩИЙ ГОРОДОК, БЛОК №1, СПРАВА КАРТИНКА*/
 .reasons-two
@@ -212,6 +226,9 @@ p.five-reasons{
     color: var(--basic-white);
 }
 /*БЛОК С ЖИЛЬЕМ ЕДОЙ И СУВЕНИРАМИ*/
+.entertainment{
+    background-color: var(--basic-white);
+}
 .entertainment ul{
     margin: 0 auto;
     padding-left: 0;
@@ -241,7 +258,6 @@ p.five-reasons{
     text-transform: uppercase;
 }
 /*РАЗМЕЩАЕМ ИКОНКИ SVG*/
-/*как и всегда - ничего не отображается!!!*/
 .entermended{
     display: flex;
     align-content: stretch;
@@ -320,6 +336,8 @@ p.five-reasons{
     line-height: 24px;
     font-style: normal;
     font-weight: normal;
+    background-color: var(--basic-white);
+    margin: 0 auto;
 }
 /*КНОПКА ПОИСК ГОСТИНИЦЫ*/
 button.searching{
@@ -348,11 +366,15 @@ button.searching:active{
     flex-direction: column;
     align-items: center;
     background-color: var(--basic-white);
-    min-width: 568px;
-    min-height: 395px;
+    width: 568px; /*если поменять на просто ширину - они уедут*/
+    height: 395px; /*если поменять на просто ширину - они уедут*/
     text-align: center;
+    z-index: 1;
+    margin: 0 auto;
+    margin-bottom: 78px;
 }
 /*INPUT ДАТЫ ЗАЕЗДА, ВЫЕЗДА, ВЗРОСЛЫЕ И ДЕТИ*/
+
 .hotel-search p{
     text-align: center;
     font-style: normal;
@@ -363,14 +385,21 @@ button.searching:active{
 .hotel-search input:hover{
     background-color: var(--basic-greytwo);
 }
+.invitation{
+    margin: 0 auto;
+    padding-top: 58px;
+    background-color: var(--basic-white);
+    z-index: 0;
+}
 /*САМИ ПОЛЯ ВВОДА ДАТ*/
 .count{
     background-color: var(--basic-lightgrey);
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-black);
-    width: 114px;
+    width: 38px;
     height: 38px;
+    border: 0px;
 }
 .dates{
     background-color: var(--basic-lightgrey);
@@ -379,19 +408,43 @@ button.searching:active{
     color: var(--basic-black);
     width: 346px;
     height: 38px;
+    border: 0px;
 }
-.dates-labels{
+.dates-labels,
+.dates-labels-children
+{
+    width: 100px;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
     color: var(--basic-black);
+    text-align: left;
+}
+.dates-labels-children{
+    text-align: right;
+    padding-right: 25px;
 }
 .kinds{
+    display: flex;
     flex-direction: row;
-    align-self: center;
+    align-items: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    width: 458px;
+}
+.reducePeople,
+.addPeople,
+.count
+{
+    border: 0px;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+}
+.count{
+    text-align: right;
 }
 .hotel-search input:focus{
     background-color: var(--basic-white);
@@ -437,40 +490,82 @@ button.searching:active{
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
-    color: var(--basic-white)
+    color: var(--basic-white);
+    border: 0px;
 }
 .findHotel:hover{
     background-color: var(--basic-bluetwo);
 }
 .findHotel:active{
     background-color: var(--basic-activeblue);
-    color: var(--basic-white);
-    /*не пойму как сделать изменение цвета текста при нажатии*/
+    color: var(--basic-white-opy-03);
 }
-.locationMap {
+.hotel-search::before{
+    content:"";
+    position: absolute;
     background-image: url("../img/map.png");
-    width: 100%;
+    width: 1199px;
     height: 473px;
+    z-index: -1;
 }
 /*ПОЛЕ FOOTER*/
-.links{
+.links_and_information{
     width: 1200px;
     height: 120px;
+    background-color: var(--basic-white);
+    margin: 0 auto;
+    z-index: 1;
+}
+.footer-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+}
+/*тут должно быть 100% по-другому*/
+.visitsedona{
+    padding-top: 10px;
+    padding-right: 89px;
+    margin-bottom: 0;
+}
+.tel{
+    margin-bottom: 0px;
+}
+.socialNetworksLinks{
+    display: flex;
+    width: 33%;
+    height: 120px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 0;
+}
+.lineTwitter{
+    padding-right: 10px;
+}
+.lineFacebook{
+    padding-right: 10px;
+}
+.copyrights{
+    width: 33%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    height: 120px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
     margin: 0 auto;
 }
-/*#VISIT SEDONA + TEL.*/
+.copyrightsLinks{
+    padding-left: 100px;
+}
 .links_and_information{
     display: flex;
-    align-items: flex-start;
-    align-content: space-between;
-    width: 1200px;
-    height: 120px;
-}
-.links_and_information p{
-    text-align: center;
-    font-style: normal;
+    justify-content: space-around;
+    align-content: center;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
@@ -478,13 +573,6 @@ button.searching:active{
     color: var(--basic-black);
 }
 /*ФОН ПОЗАДИ СОЦСЕТЕЙ И ИХ АКТИВИЗАЦИЯ*/
-/*как их теперь на активизацию выставлять???*/
-.socialNetworksLinks {
-    display: flex;
-    width: 30%;
-    height: 120px;
-    list-style: none;
-}
 .socialNetworkTwitter{
     display: block;
     position: relative;
@@ -496,6 +584,8 @@ button.searching:active{
 .socialNetworkTwitter::after{
     content: "";
     position: absolute;
+    left: 33%;
+    top: 33%;
     background-image: url("../img/twitter.svg");
     width: 17px;
     height: 15px;
@@ -503,6 +593,7 @@ button.searching:active{
 }
 .socialNetworkFacebook{
     display: block;
+    position: relative;
     background: var(--basic-blue);
     width: 46px;
     height: 48px;
@@ -510,14 +601,16 @@ button.searching:active{
 .socialNetworkFacebook::after{
     content: "";
     position: absolute;
+    left: 33%;
+    top: 33%;
     background-image: url("../img/fb-icon.svg");
     width: 17px;
     height: 15px;
     text-align: center;
-    background-image: no-repeat;
 }
 .socialNetworkYoutube{
     display: block;
+    position: relative;
     background: var(--basic-blue);
     width: 46px;
     height: 48px;
@@ -525,22 +618,12 @@ button.searching:active{
 .socialNetworkYoutube::after{
     content: "";
     position: absolute;
+    left: 33%;
+    top: 33%;
     background-image: url("../img/youtube.svg");
     width: 17px;
     height: 15px;
     text-align: center;
-}
-/*WEBSITE BY*/
-p.copyrights{
-    display: flex;
-    width: 30%;
-    height: 120px;
-    flex-direction: column;
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 26px;
 }
 .copyrights::after{
     content: "";

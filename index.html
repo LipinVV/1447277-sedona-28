@@ -99,14 +99,12 @@
         </p>
         <p class="kinds">
           <label class="dates-labels" for="adults">Взрослые:</label>
+          <button type="button" class="reducePeople"><span class="visually-hidden">уменьшить на единицу</span>-</button>
           <input class="count" type="number" name="adults" id="adults" placeholder="2">
-          <button type="button" class="reducePeople"><span class="visually-hidden">уменьшить на единицу</span>-</button>
           <button type="button" class="addPeople"><span class="visually-hidden">увеличить на единицу</span>+</button>
-        </p>
-        <p class="kinds">
-          <label class="dates-labels" for="children">Дети:</label>
-          <input class="count" type="number" name="children" id="children" placeholder="0">
+          <label class="dates-labels-children" for="children">Дети:</label>
           <button type="button" class="reducePeople"><span class="visually-hidden">уменьшить на единицу</span>-</button>
+          <input class="count" type="number" name="children" id="children" placeholder="0">
           <button type="button" class="addPeople"><span class="visually-hidden">увеличить на единицу</span>+</button>
         </p>
         <button class="findHotel" type="submit">Найти</button>
@@ -116,14 +114,16 @@
   </main>
   <footer class="links">
     <div class="links_and_information">
-      <p>#VisitSedona </p>
-      <p class="tel">Тел: +7(495) 666-02-66</p>
+      <div class="footer-wrap">
+        <p class="visitsedona">#VisitSedona </p>
+        <p class="tel">Тел: +7(495) 666-02-66</p>
+      </div>
       <ul class="socialNetworksLinks">
-        <li><a class="socialNetworkTwitter" href="#" aria-label="ссылка на Твиттер"></a></li>
-        <li><a class="socialNetworkFacebook" href="#" aria-label="ссылка на Фэйсбук"></a></li>
-        <li><a class="socialNetworkYoutube" href="#" aria-label="ссылка на Ютьюб"></a></li>
+        <li class="lineTwitter"><a class="socialNetworkTwitter" href="#" aria-label="ссылка на Твиттер"></a></li>
+        <li class="lineFacebook"><a class="socialNetworkFacebook" href="#" aria-label="ссылка на Фэйсбук"></a></li>
+        <li class="lineYotube"><a class="socialNetworkYoutube" href="#" aria-label="ссылка на Ютьюб"></a></li>
       </ul>
-      <p class="copyrights"> Website by
+      <p class="copyrights">Website by
         <a class="copyrightsLinks" href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </p>
     </div>
