@@ -76,6 +76,12 @@ img{
 {
     text-align: right;
 }
+.site-navigation li:nth-child(1){
+    padding-left: 63px;
+}
+.site-navigation li:nth-child(4){
+    padding-right: 63px;
+}
 /*НАВИГАЦИЯ В ШАПКЕ*/
 .site-navigation {
     display: flex;
@@ -422,6 +428,11 @@ button.searching:active{
     color: var(--basic-black);
     text-align: left;
 }
+.dates-labels-one,
+.dates-labels-two
+{
+    padding-right: 10px;
+}
 .dates-labels-children{
     text-align: right;
     padding-right: 25px;
@@ -449,6 +460,19 @@ button.searching:active{
 .hotel-search input:focus{
     background-color: var(--basic-white);
     border: 2px solid var(--basic-whitetwo);
+}
+.inputs-one{
+    margin: 0 auto;
+    padding-top: 55px;
+}
+.inputs-two{
+    margin: 0 auto;
+    padding-top: 29px;
+}
+.kinds{
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 54px;
 }
 /*ИКОНКИ КАЛЕНДАРИКОВ*/
 .inputs-one::after,
@@ -521,9 +545,11 @@ button.searching:active{
     padding-top: 10px;
     padding-right: 89px;
     margin-bottom: 0;
+    padding-left: 117px;
 }
 .tel{
     margin-bottom: 0px;
+    padding-left: 117px;
 }
 .socialNetworksLinks{
     display: flex;
@@ -735,22 +761,24 @@ input[type="checkbox"]{
 .sortings{
     grid-column: 2/7;
     grid-row: 1;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
 }
 .price-one{
     grid-column: 3/7;
     grid-row: 1;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
 }
 .type-one{
     grid-column: 4/7;
     grid-row: 1;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
+    text-decoration: underline dotted;
 }
 .raiting-one{
     grid-column: 5/7;
     grid-row: 1;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
+    text-decoration: underline dotted;
 }
 .sorting-buttons-up,
 .sorting-buttons-down
