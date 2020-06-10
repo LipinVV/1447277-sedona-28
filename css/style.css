@@ -669,7 +669,7 @@ button.searching:active{
     background-image: url("../img/logo-htmlacademy.svg");
     width: 113.98px;
     height: 39.78px;
-    left: 79%
+    right: 25%;
 }
 .copyrightsLinks::after:hover{
     content: "";
@@ -677,7 +677,6 @@ button.searching:active{
     background-image: url("../img/logo-html-hover.svg");
     width: 113.98px;
     height: 39.78px;
-    left: 79%
 }
 .copyrightsLinks{
     position: relative;
@@ -738,7 +737,6 @@ button.searching:active{
     line-height: 21px;
     text-transform: uppercase;
     color: var(--basic-white);
-    padding-left: 16px;
 }
 .white-font-two{
     display: flex;
@@ -756,6 +754,7 @@ button.searching:active{
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-bottom: 25px;
+    position: relative;
 }
 .thirdline{
     display: flex;
@@ -807,11 +806,24 @@ button.searching:active{
 /*ЧЕКБОКСЫ*/
 /*не доработал*/
 input[type="checkbox"]{
-    border: 2px solid;
+    
+}
+
+.check_input{
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
     width: 23px;
     height: 23px;
-    border-color: var(--basic-white);
-    color: var(--basic-white);
+    background-image: url("../img/checkbox-calm.svg");
+}
+.check_input:checked + .check_box{
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 27px;
+    background-image: url("../img/checkbox-checked-calm.svg");
 }
 /*стилизация автозаполнения*/
 ::-webkit-input-placeholder{
