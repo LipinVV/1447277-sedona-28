@@ -717,7 +717,7 @@ button.searching:active{
     flex-grow: 2;
     margin: 0;
     padding: 0;
-    padding-left: 72px;
+    padding-left: 110px;
 }
 .pricePerDay{
     display: flex;
@@ -726,7 +726,7 @@ button.searching:active{
     margin: 0;
     padding: 0;
     justify-content: flex-end;
-    padding-left: 184px;
+    padding-left: 154px;
 }
 .white-font{
     display: flex;
