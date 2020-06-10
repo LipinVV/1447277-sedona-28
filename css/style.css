@@ -23,8 +23,10 @@
     --basic-activeblue: #5496BD;
     --basic-white-opy-03: rgb(255, 255, 255, 0.3);
     --basic-raiting: #666666;
-    --basic-background: #888888;
+    --basic-background: #f2f2f2;
   }
+::after { box-sizing: border-box; }
+::before { box-sizing: border-box; }
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -45,6 +47,7 @@ body {
     background-color: var(--basic-background);
     background-position: top center;
     background-repeat: no-repeat;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   }
 .container{
     background-color: var(--basic-white);
@@ -85,6 +88,7 @@ img{
 /*НАВИГАЦИЯ В ШАПКЕ*/
 .site-navigation {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
     padding-left: 0;
@@ -93,19 +97,14 @@ img{
     color: var(--basic-black);
     list-style: none;
     max-width: 1200px;
-    height: 56px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 .logo-img{
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-}
-.welcome-background{
-    width: 1200px;
-    height: 509px;
-    display: block;
-    text-align: center;
 }
 .welcome-background .welcome-main{
     padding-top: 77.35px;
@@ -131,6 +130,8 @@ img{
     background-image: url("../img/background.jpg");
     width: 1200px;
     height: 509px;
+    display: block;
+    text-align: center;
 }
 .motto{
     padding-top: 42.5px;
@@ -152,20 +153,19 @@ p.five-reasons{
 .reasons-two
 {
     display: flex;
-    width: 1200px;
-    height: 256px;
+    flex-wrap: wrap;
 }
 /*КАРТИНКА НАСТОЯЩИЙ ГОРОДОК*/
 .reasons{
     display: flex;
+    flex-wrap: wrap;
     order: (-1);
     width: 1200px;
-    height: 256px;
+    min-height: 256px;
 }
 .reason-one,
 .else-reason{
     width: 400px;
-    height: 256px;
     background-color: var(--basic-blue);
     vertical-align: middle;
     text-align: center;
@@ -174,15 +174,13 @@ p.five-reasons{
 .first-picture-of-reason{
     background-image: url("../img/trueCity.png");
     width: 800px;
-    height: 256px;
 }
 /*КАРТИНКА МОСТ ДЬЯВОЛА*/
-/*не отображается!!!!!*/
 .second-picture-of-reason{
     order: -1;
     background-image: url("../img/devilsBrige.png");
     width: 800px;
-    height: 256px;
+    min-height: 256px;
 }
 /*ЗАГОЛОВКИ №1 и №2*/
 .explanations
@@ -234,6 +232,9 @@ p.five-reasons{
     color: var(--basic-white);
 }
 /*БЛОК С ЖИЛЬЕМ ЕДОЙ И СУВЕНИРАМИ*/
+.entertainment{
+position: relative;
+}
 .entertainment ul{
     margin: 0 auto;
     padding-left: 0;
@@ -265,50 +266,53 @@ p.five-reasons{
 /*РАЗМЕЩАЕМ ИКОНКИ SVG*/
 .entermended{
     display: flex;
-    align-content: stretch;
+    flex-wrap: wrap;
+    align-content: space-around;
     margin: 0 auto;
     width: 1200px;
-    height: 330px;
+    position: relative;
 }
 .recommended{
-    display: flex;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
-    align-content: space-between;
+    align-content: flex-start;
     flex-direction: column;
-    height: 330px;
+    width: 33%;
+    position: relative;
 }
 .recommended:nth-child(1)::before{
-    padding-top: 10%;
     content: "";
     position: absolute;
     background-image: url("../img/houseIcon.svg");
     width: 75px;
     height: 72px;
     background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .recommended:nth-child(2)::before{
-    padding-top: 10%;
     content: "";
     position: absolute;
     background-image: url("../img/food.svg");
     width: 75px;
     height: 72px;
     background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .recommended:nth-child(3)::before{
-    padding-top: 11%;
     content: "";
     position: absolute;
     background-image: url("../img/gift.svg");
     width: 75px;
     height: 72px;
     background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .positives-more{
     background-color: var(--basic-middlegrey);
     width: 1200px;
-    height: 256px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -328,6 +332,7 @@ p.five-reasons{
 }
 /*ЗАИНТЕРЕСОВАЛИСЬ?*/
 .invitation{
+    position: relative;
     text-align: center;
     color: var(--basic-black);
     font-size: 30px;
@@ -344,8 +349,7 @@ p.five-reasons{
 }
 /*КНОПКА ПОИСК ГОСТИНИЦЫ*/
 button.searching{
-    min-width: 568px;
-    min-height: 86px;
+    width: 568px;
     background-color: var(--basic-deepgrey);
     color: var(--basic-white);
     font-size: 21px;
@@ -355,6 +359,8 @@ button.searching{
     font-weight: bold;
     display: block;
     margin: 0 auto;
+    padding: 30px;
+    position: relative;
 }
 button.searching:hover{
     background-color: var(--basic-brown);
@@ -365,23 +371,23 @@ button.searching:active{
 }
 /*ФОРМА ПОИСКА ГОСТИНИЦЫ*/
 .hotel-search{
+    position: absolute;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     background-color: var(--basic-white);
     width: 568px;
-    height: 395px; 
     text-align: center;
     margin: 0 auto;
     margin-bottom: 78px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.hotel-search::before{
-    content:"";
-    position: absolute;
+.locationMap{
     background-image: url("../img/map.png");
     width: 1199px;
     height: 473px;
-    z-index: -1;
 }
 /*INPUT ДАТЫ ЗАЕЗДА, ВЫЕЗДА, ВЗРОСЛЫЕ И ДЕТИ*/
 
@@ -439,10 +445,10 @@ button.searching:active{
 }
 .kinds{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: wrap;
     width: 458px;
 }
 .reducePeople,
@@ -530,12 +536,12 @@ button.searching:active{
 /*ПОЛЕ FOOTER*/
 .links_and_information{
     width: 1200px;
-    height: 120px;
     background-color: var(--basic-white);
     margin: 0 auto;
 }
 .footer-wrap{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 33%;
     align-items: center;
@@ -554,11 +560,11 @@ button.searching:active{
 .socialNetworksLinks{
     display: flex;
     width: 33%;
-    height: 120px;
+    flex-wrap: wrap;
     list-style: none;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0;
     padding-left: 0;
 }
 .lineTwitter{
@@ -570,20 +576,21 @@ button.searching:active{
 .copyrights{
     width: 33%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    height: 120px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
-    margin: 0 auto;
+    margin: 0;
 }
 .copyrightsLinks{
     padding-left: 100px;
 }
 .links_and_information{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
     font-weight: bold;
@@ -677,6 +684,7 @@ button.searching:active{
 /*ФОРМA*/
 .variations{
     display: flex;
+    flex-wrap: wrap;
     background-image: url("../img/innerBackgroundJPG.jpg");
     background-image: no-repeat;
     height: 217px;
