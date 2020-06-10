@@ -450,6 +450,8 @@ button.searching:active{
     align-items: center;
     justify-content: flex-start;
     width: 458px;
+    margin: 0 auto;
+    padding-top: 30px;
 }
 .reducePeople,
 .addPeople,
@@ -474,11 +476,6 @@ button.searching:active{
 .inputs-two{
     margin: 0 auto;
     padding-top: 29px;
-}
-.kinds{
-    margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 54px;
 }
 /*ИКОНКИ КАЛЕНДАРИКОВ*/
 .inputs-one::after,
@@ -525,6 +522,7 @@ button.searching:active{
     text-transform: uppercase;
     color: var(--basic-white);
     border: 0px;
+    margin: 55px;
 }
 .findHotel:hover{
     background-color: var(--basic-bluetwo);
@@ -543,50 +541,50 @@ button.searching:active{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 33%;
-    align-items: center;
+    width: 40%;
+    align-items: flex-start;
 }
-/*тут должно быть 100% по-другому*/
+/*блок #Visit*/
 .visitsedona{
-    padding-top: 10px;
-    padding-right: 89px;
-    margin-bottom: 0;
-    padding-left: 117px;
+    padding-top: 23px;
+    padding-bottom: 9px;
+    margin: 0;
+    padding-left: 153px;
 }
 .tel{
-    margin-bottom: 0px;
-    padding-left: 117px;
+    margin: 0px;
+    padding-left: 111px;
 }
 .socialNetworksLinks{
     display: flex;
-    width: 33%;
+    width: 20%;
     flex-wrap: wrap;
     list-style: none;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding-left: 0;
+    position: relative;
 }
-.lineTwitter{
-    padding-right: 10px;
-}
-.lineFacebook{
+.lineTwitter,
+.lineYoutube,
+.lineFacebook
+{
+    padding-top: 36px;
+    padding-bottom: 36px;
     padding-right: 10px;
 }
 .copyrights{
-    width: 33%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
     margin: 0;
-}
-.copyrightsLinks{
-    padding-left: 100px;
 }
 .links_and_information{
     display: flex;
@@ -611,12 +609,16 @@ button.searching:active{
 .socialNetworkTwitter::after{
     content: "";
     position: absolute;
-    left: 33%;
-    top: 33%;
+    left: 50%;
+    top: 50%;
     background-image: url("../img/twitter.svg");
     width: 17px;
     height: 15px;
     text-align: center;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .socialNetworkFacebook{
     display: block;
@@ -628,12 +630,16 @@ button.searching:active{
 .socialNetworkFacebook::after{
     content: "";
     position: absolute;
-    left: 33%;
-    top: 33%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-image: url("../img/fb-icon.svg");
     width: 17px;
     height: 15px;
     text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .socialNetworkYoutube{
     display: block;
@@ -645,12 +651,16 @@ button.searching:active{
 .socialNetworkYoutube::after{
     content: "";
     position: absolute;
-    left: 33%;
-    top: 33%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-image: url("../img/youtube.svg");
     width: 17px;
     height: 15px;
     text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .copyrights::after{
     content: "";
@@ -658,17 +668,20 @@ button.searching:active{
     background-image: url("../img/logo-htmlacademy.svg");
     width: 113.98px;
     height: 39.78px;
+    left: 79%
 }
-/*ССЫЛКА НА HTML АКАДЕМИЮ*/
-/*тут ещё может быть другой подход, нужно разобраться!!!*/
-.copyrightsLinks:hover{
-    background-color: var(--basic-bluetwo);
+.copyrightsLinks::after:hover{
+    content: "";
+    position: absolute;
+    background-image: url("../img/logo-html-hover.svg");
+    width: 113.98px;
+    height: 39.78px;
+    left: 79%
 }
-/*
-.copyrightsLinks:active{
-    opacity 0.3;
+.copyrightsLinks{
+    position: relative;
+    padding-right: 261px;
 }
-*/
 /***********************/
 /******INNER PAGE******/
 /***********************/
@@ -688,9 +701,47 @@ button.searching:active{
     background-image: url("../img/innerBackgroundJPG.jpg");
     background-image: no-repeat;
     height: 217px;
-    width: 100%
+    align-content: stretch;
+}
+.infrastructure{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    padding-left: 72px;
+}
+.typeOfApartment{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    margin: 0;
+    padding: 0;
+    padding-left: 72px;
+}
+.pricePerDay{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    padding-left: 184px;
 }
 .white-font{
+    display: flex;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    padding-left: 16px;
+}
+.white-font-two{
+    display: flex;
+    flex-wrap: wrap;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -698,17 +749,59 @@ button.searching:active{
     text-transform: uppercase;
     color: var(--basic-white);
 }
+.firstline,
+.secondline{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 25px;
+}
+.thirdline{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.sortingPrices{
+    height: 2px;
+    background-color: var(--basic-white);
+    margin: 0;
+    margin-bottom: 33px;
+    position: relative;
+    width: 316px;
+}
+.sortingPrices::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: var(--basic-grey);
+    top: 0;
+    right: 0;
+    width: 40px;
+}
 /*ЗАГОЛОВКИ СЕКЦИЙ БРОНИРОВАНИЯ*/
-.captions{
+.captions,
+.captions-one
+{
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
     color: var(--basic-white);
+    margin: 0;
+    padding-top: 26px;
+    padding-bottom: 24px;
 }
-.captions{
+.captions-two{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
     color: var(--basic-white);
+    margin: 0;
+    padding-top: 26px;
+    padding-bottom: 10px;
 }
 /*ЧЕКБОКСЫ*/
 /*не доработал*/

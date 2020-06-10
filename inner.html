@@ -26,29 +26,43 @@
   <main class="container">
     <form class="variations" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="infrastructure">
-        <h2 class="captions">Инфраструктура:</h2>
+        <h2 class="captions-one">Инфраструктура:</h2>
+        <div class="firstline">
         <input type="checkbox" name="pool" id="pool" checked>
         <label class="white-font" for="pool">Бассейн</label>
+        </div>
+        <div class="firstline">
         <input type="checkbox" name="parking" id="parking">
         <label class="white-font" for="parking">Парковка</label>
+        </div>
+        <div class="firstline">
         <input type="checkbox" name="wiFi" id="wiFi">
         <label class="white-font" for="wiFi">Wi-Fi</label>
+        </div>
       </fieldset>
       <fieldset class="typeOfApartment">
         <h2 class="captions">Тип жилья:</h2>
+        <div class="secondline">
         <input type="checkbox" name="hotelType" id="hotelType" checked>
         <label class="white-font" for="hotelType">Гостиница</label>
+        </div>
+        <div class="secondline">
         <input type="checkbox" name="motelType" id="motelType" checked>
         <label class="white-font" for="motelType">Мотель</label>
+      </div>
+        <div class="secondline">
         <input type="checkbox" name="apartmentType" id="apartmentType" checked>
         <label class="white-font" for="apartmentType">Апартаменты</label>
+      </div>
       </fieldset>
       <fieldset class="pricePerDay">
-        <h2 class="captions">Стоимость в сутки(р):</h2>
+        <h2 class="captions-two">Стоимость в сутки(р):</h2>
+        <div class="thirdline">
         <input type="text" name="priceFrom" id="priceFrom" placeholder="от 0">
-        <label class="white-font" for="priceFrom"></label>
+        <label class="white-font-two" for="priceFrom"></label>
         <input type="text" name="priceTo" id="priceTo" placeholder="до 3000">
-        <label class="white-font" for="priceTo"></label>
+        <label class="white-font-two" for="priceTo"></label>
+        </div>
         <div class="equalizer">
           <div class="sortingPrices"></div>
           <span class="sortPriceFrom"></span>
