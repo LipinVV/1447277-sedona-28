@@ -28,45 +28,50 @@
       <fieldset class="infrastructure">
         <h2 class="captions-one">Инфраструктура:</h2>
         <div class="firstline">
-        <label class="white-font" for="pool">
-        <input class="check_input" type="checkbox" name="pool" id="pool" checked>
-        <span class="check_box"></span>Бассейн</label>
+          <label class="white-font" for="pool">
+            <input class="check_input" type="checkbox" name="pool" id="pool" checked>
+            <span class="check_box"></span>Бассейн</label>
         </div>
         <div class="firstline">
-        <input class="check_input" type="checkbox" name="parking" id="parking">
-        <label class="white-font" for="parking"><span class="check_box"></span>Парковка</label>
+          <label class="white-font" for="parking">Парковка
+            <input class="check_input" type="checkbox" name="parking" id="parking">
+            <span class="check_box"></span>
+          </label>
         </div>
         <div class="firstline">
-        <input class="check_input" type="checkbox" name="wiFi" id="wiFi">
-        <label class="white-font" for="wiFi"><span class="check_box"></span>Wi-Fi</label>
+          <label class="white-font" for="wiFi">Wi-Fi
+            <input class="check_input" type="checkbox" name="wiFi" id="wiFi">
+            <span class="check_box"></span></label>
         </div>
       </fieldset>
       <fieldset class="typeOfApartment">
         <h2 class="captions">Тип жилья:</h2>
         <div class="secondline">
-        <label class="white-font" for="hotelType">Гостиница
-        <input class="check_input" type="checkbox" name="hotelType" id="hotelType" checked>
-        <span class="check_box"></span>
-        </label>
+          <label class="white-font" for="hotelType">Гостиница
+            <input class="check_input" type="checkbox" name="hotelType" id="hotelType" checked>
+            <span class="check_box"></span>
+          </label>
         </div>
         <div class="secondline">
-        <label class="white-font" for="motelType">Мотель
-        <input class="check_input" type="checkbox" name="motelType" id="motelType" checked>
-        <span class="check_box"></span>
-      </label>
-      </div>
+          <label class="white-font" for="motelType">Мотель
+            <input class="check_input" type="checkbox" name="motelType" id="motelType" checked>
+            <span class="check_box"></span>
+          </label>
+        </div>
         <div class="secondline">
-        <input class="check_input" type="checkbox" name="apartmentType" id="apartmentType" checked>
-        <label class="white-font" for="apartmentType"><span class="check_box"></span>Апартаменты</label>
-      </div>
+          <label class="white-font" for="apartmentType">Апартаменты
+            <input class="check_input" type="checkbox" name="apartmentType" id="apartmentType" checked>
+            <span class="check_box"></span>
+          </label>
+        </div>
       </fieldset>
       <fieldset class="pricePerDay">
         <h2 class="captions-two">Стоимость в сутки(р):</h2>
         <div class="thirdline">
-        <input type="text" name="priceFrom" id="priceFrom" placeholder="от 0">
-        <label class="white-font-two" for="priceFrom"></label>
-        <input type="text" name="priceTo" id="priceTo" placeholder="до 3000">
-        <label class="white-font-two" for="priceTo"></label>
+          <input class="priceperday" type="text" name="priceFrom" id="priceFrom" placeholder="от 0">
+          <label class="white-font-two" for="priceFrom"></label>
+          <input class="priceperday" type="text" name="priceTo" id="priceTo" placeholder="до 3000">
+          <label class="white-font-two" for="priceTo"></label>
         </div>
         <div class="equalizer">
           <div class="sortingPrices"></div>
@@ -82,14 +87,17 @@
       <a class="price-one" href="#">По цене</a>
       <a class="type-one" href="#">По типу</a>
       <a class="raiting-one" href="#">По рейтингу</a>
-      <button class="sorting-buttons-up" type="button" id="raise"><span class="visually-hidden">сортировка по возрастанию</span></button>
-      <button class="sorting-buttons-down" type="button" id="low"><span class="visually-hidden">сортировка по убыванию</span></button>
+      <button class="sorting-buttons-up" type="button" id="raise"><span class="visually-hidden">сортировка по
+          возрастанию</span></button>
+      <button class="sorting-buttons-down" type="button" id="low"><span class="visually-hidden">сортировка по
+          убыванию</span></button>
     </div>
     <section class="hotels">
       <ul class="hotels-navigation">
         <li>
           <div class="choices">
-            <a class="hotel-img" href=""><img src="img/amararesort.jpg" width="135" height="90" alt="amaraResort&SPA"></a>
+            <a class="hotel-img" href=""><img src="img/amararesort.jpg" width="135" height="90"
+                alt="amaraResort&SPA"></a>
             <h3 class="hotel">Amara Resort & SPA</h3>
             <p class="typeOfHotel">Гостиница</p>
             <p class="price">от 4000 р.</p>
@@ -101,7 +109,8 @@
         </li>
         <li>
           <div class="choices">
-            <a class="hotel-img" href=""><img src="img/desertquail.jpg" width="135" height="90" alt="desertQuailInn"></a>
+            <a class="hotel-img" href=""><img src="img/desertquail.jpg" width="135" height="90"
+                alt="desertQuailInn"></a>
             <h3 class="hotel">Desert Quail Inn</h3>
             <p class="typeOfHotel">Мотель</p>
             <p class="price">от 3000 р.</p>
@@ -113,7 +122,8 @@
         </li>
         <li>
           <div class="choices">
-            <a class="hotel-img" href=""><img src="img/pocodiablo.jpg" width="135" height="90" alt="villasAtPocoDiablo"></a>
+            <a class="hotel-img" href=""><img src="img/pocodiablo.jpg" width="135" height="90"
+                alt="villasAtPocoDiablo"></a>
             <h3 class="hotel">Villas at Poco Diablo</h3>
             <p class="typeOfHotel">Апартаменты</p>
             <p class="price">от 2000 р.</p>

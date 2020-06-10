@@ -642,6 +642,13 @@ button.searching:active{
     background-repeat: no-repeat;
     background-position: center;
 }
+.socialNetworkFacebook:hover{
+    background-color: var(--basic-bluetwo);
+}
+.socialNetworkFacebook:active{
+    background-color: var(--basic-activeblue);
+    color: var(--basic-white-opy-03);
+}
 .socialNetworkYoutube{
     display: block;
     position: relative;
@@ -729,6 +736,7 @@ button.searching:active{
     padding-left: 154px;
 }
 .white-font{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     font-style: normal;
@@ -805,10 +813,11 @@ button.searching:active{
 }
 /*ЧЕКБОКСЫ*/
 /*не доработал*/
-input[type="checkbox"]{
-    
+.priceperday {
+    width: 150px;
+    margin: 0;
+    background: none;
 }
-
 .check_input{
     position: absolute;
     -webkit-appearance: none;
@@ -817,6 +826,7 @@ input[type="checkbox"]{
     height: 23px;
     background-image: url("../img/checkbox-calm.svg");
 }
+
 .check_input:checked + .check_box{
     position: absolute;
     -webkit-appearance: none;
@@ -824,6 +834,22 @@ input[type="checkbox"]{
     width: 23px;
     height: 27px;
     background-image: url("../img/checkbox-checked-calm.svg");
+}
+.check_input:disabled + .check_box{
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-disabled.svg");
+}
+.check_input:checked:disabled + .check_box{
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-checked-disabled.svg");
 }
 /*стилизация автозаполнения*/
 ::-webkit-input-placeholder{
