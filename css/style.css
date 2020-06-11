@@ -25,8 +25,12 @@
     --basic-raiting: #666666;
     --basic-background: #f2f2f2;
   }
-::after { box-sizing: border-box; }
-::before { box-sizing: border-box; }
+body::after { 
+    box-sizing: border-box; 
+}
+body::before { 
+    box-sizing: border-box; 
+}
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -479,22 +483,19 @@ button.searching:active{
     padding-top: 29px;
 }
 /*ИКОНКИ КАЛЕНДАРИКОВ*/
-.inputs-one::after,
-.inputs-two::after{
+.iconCalendar::after{
     content: "";
     position: absolute;
     width: 21px;
     height: 23px;
     background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
-    transform: translate(-125%, 30%);
+    transform: translate(-120%, 25%);
 }
-.inputs-one:hover::after,
-.inputs-two:hover::after{
+.iconCalendar:hover::after{
     background-image: url("../img/calendar-hover.svg");
 }
-.inputs-one:active::after,
-.inputs-two:active::after{
+.iconCalendar:active::after{
     background-image: url("../img/calendar-active.svg");
 }
 /*МИНУСИКИ И ПЛЮСИКИ*/
@@ -727,37 +728,29 @@ button.searching:active{
 }
 /*ФОРМA*/
 .variations{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
     background-image: url("../img/innerBackgroundJPG.jpg");
     background-image: no-repeat;
     height: 217px;
-    align-content: stretch;
 }
 .infrastructure{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    display: grid;
     margin: 0;
     padding: 0;
     padding-left: 72px;
 }
 .typeOfApartment{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 2;
+    display: grid;
     margin: 0;
     padding: 0;
-    padding-left: 110px;
+    padding-left: 135px;
 }
 .pricePerDay{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 2;
+    display: grid;
     margin: 0;
     padding: 0;
-    justify-content: flex-end;
-    padding-left: 154px;
+    padding-left: 285px;
 }
 .white-font{
     position: relative;
@@ -769,6 +762,7 @@ button.searching:active{
     line-height: 21px;
     text-transform: uppercase;
     color: var(--basic-white);
+    padding-left: 14px;
 }
 .white-font-two{
     display: flex;
@@ -787,6 +781,7 @@ button.searching:active{
     justify-content: flex-start;
     padding-bottom: 25px;
     position: relative;
+    padding-left: 23px;
 }
 .thirdline{
     display: flex;
@@ -836,44 +831,27 @@ button.searching:active{
     padding-bottom: 10px;
 }
 /*ЧЕКБОКСЫ*/
-/*не доработал*/
-.priceperday {
-    width: 150px;
-    margin: 0;
-    background: none;
-}
-.check_input{
+
+.infrastructure label::before,
+.typeOfApartment label::before
+{
+    content: "";
     position: absolute;
-    -webkit-appearance: none;
-    appearance: none;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
     width: 23px;
     height: 23px;
     background-image: url("../img/checkbox-calm.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: 50px;
 }
-
-.check_input:checked + .check_box{
-    position: absolute;
-    -webkit-appearance: none;
-    appearance: none;
-    width: 23px;
-    height: 27px;
+.infrastructure input:checked + label::before,
+.typeOfApartment input:checked + label::before
+{
     background-image: url("../img/checkbox-checked-calm.svg");
-}
-.check_input:disabled + .check_box{
-    position: absolute;
-    -webkit-appearance: none;
-    appearance: none;
-    width: 23px;
-    height: 23px;
-    background-image: url("../img/checkbox-disabled.svg");
-}
-.check_input:checked:disabled + .check_box{
-    position: absolute;
-    -webkit-appearance: none;
-    appearance: none;
-    width: 23px;
-    height: 23px;
-    background-image: url("../img/checkbox-checked-disabled.svg");
 }
 /*стилизация автозаполнения*/
 ::-webkit-input-placeholder{
@@ -893,6 +871,10 @@ button.searching:active{
     color: var(--basic-white);
     background-color: transparent;
     text-transform: uppercase;
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 32px;
+    margin-right: 168px;
 }
 .show:hover{
     background-color: var(--basic-white);
