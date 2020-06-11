@@ -478,7 +478,7 @@ button.searching:active{
     margin: 0 auto;
     padding-top: 29px;
 }
-/*ИКОНКИ КАЛЕНДАРИКОВ
+/*ИКОНКИ КАЛЕНДАРИКОВ*/
 .inputs-one::after,
 .inputs-two::after{
     content: "";
@@ -487,16 +487,16 @@ button.searching:active{
     height: 23px;
     background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
+    transform: translate(-125%, 30%);
 }
-.inputs-one::after:hover,
-.inputs-two::after:hover{
-    background-color: var(--basic-black);
+.inputs-one:hover::after,
+.inputs-two:hover::after{
+    background-image: url("../img/calendar-hover.svg");
 }
-.inputs-one::after:active,
-.inputs-two::after:active{
-    background-color: var(--basic-blue);
+.inputs-one:active::after,
+.inputs-two:active::after{
+    background-image: url("../img/calendar-active.svg");
 }
-*/
 /*МИНУСИКИ И ПЛЮСИКИ*/
 
 .reducePeople::before{
