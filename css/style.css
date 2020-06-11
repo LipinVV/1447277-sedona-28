@@ -419,6 +419,7 @@ button.searching:active{
     width: 346px;
     height: 38px;
     border: 0px;
+    text-transform: uppercase;
 }
 .dates-labels-one,
 .dates-labels-two,
@@ -497,19 +498,28 @@ button.searching:active{
 }
 */
 /*МИНУСИКИ И ПЛЮСИКИ*/
-/*нужно настроить их прозрачность, так как очень ярко!!!*/
-.reducePeople,
-.addPeople{
-    color: var(--basic-grey);
+
+.reducePeople::before{
+    position: absolute;
+    transform: translate(-50%, -70%);
+    content: url("data:image/svg+xml,%3Csvg width='12' height='3' viewBox='0 0 12 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='12' height='3' fill='%23A9A9A9'/%3E%3C/svg%3E%0A");
 }
-.reducePeople:hover,
-.addPeople:hover{
-    color: var(--basic-black);
+.addPeople::before{
+    content: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z' fill='%23A9A9A9'/%3E%3C/svg%3E");
 }
-.reducePeople:active,
-.addPeople:active{
-    color: var(--basic-blue);
+.reducePeople:hover::before{
+    content: url("data:image/svg+xml,%3Csvg width='12' height='3' viewBox='0 0 12 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='12' height='3' fill='black'/%3E%3C/svg%3E%0A");
 }
+.addPeople:hover::before{
+    content: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+.reducePeople:active::before{
+    content: url("data:image/svg+xml,%3Csvg width='12' height='3' viewBox='0 0 12 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='12' height='3' fill='%2381B3D2'/%3E%3C/svg%3E ");
+}
+.addPeople:active::before{
+    content: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z' fill='%2381B3D2'/%3E%3C/svg%3E%0A");
+}
+
 /*КНОПКА "НАЙТИ"*/
 .findHotel{
     background-color: var(--basic-blue);
@@ -642,12 +652,18 @@ button.searching:active{
     background-repeat: no-repeat;
     background-position: center;
 }
-.socialNetworkFacebook:hover{
+.socialNetworkFacebook:hover,
+.socialNetworkYoutube:hover,
+.socialNetworkTwitter:hover
+{
     background-color: var(--basic-bluetwo);
 }
-.socialNetworkFacebook:active{
+.socialNetworkFacebook:active,
+.socialNetworkYoutube:active,
+.socialNetworkTwitter:active
+{
     background-color: var(--basic-activeblue);
-    color: var(--basic-white-opy-03);
+    color: var(--basic-blue);
 }
 .socialNetworkYoutube{
     display: block;
