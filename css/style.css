@@ -686,20 +686,28 @@ button.searching:active{
     background-repeat: no-repeat;
     background-position: center;
 }
-.copyrights::after{
+.webby::after{
     content: "";
     position: absolute;
     background-image: url("../img/logo-htmlacademy.svg");
-    width: 113.98px;
-    height: 39.78px;
-    right: 25%;
+    width: 114px;
+    height: 40px;
+    right: 138px;
+    transform: translateY(-25%);
 }
-.copyrightsLinks::after:hover{
-    content: "";
+.webby:hover::after{
     position: absolute;
-    background-image: url("../img/logo-html-hover.svg");
-    width: 113.98px;
-    height: 39.78px;
+    width: 114px;
+    height: 40px;
+    right: 138px;
+    content: url("../img/logo-html-hover.svg");
+}
+.webby:active::after{
+    position: absolute;
+    width: 114px;
+    height: 40px;
+    right: 138px;
+    content: url("../img/logo-html-press.svg");
 }
 .copyrightsLinks{
     position: relative;
