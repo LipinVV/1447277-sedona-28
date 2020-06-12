@@ -903,28 +903,33 @@ button.searching:active{
     grid-column: 1/7;
     grid-row: 1;
     padding-left: 73px;
+    width: 13%;
 }
 .sortings{
     grid-column: 2/7;
     grid-row: 1;
     padding-bottom: 6px;
+    width: 11%;
 }
 .price-one{
     grid-column: 3/7;
     grid-row: 1;
     padding-bottom: 6px;
+    width: 9%;
 }
 .type-one{
     grid-column: 4/7;
     grid-row: 1;
     padding-bottom: 6px;
     text-decoration: underline dotted;
+    width: 10%;
 }
 .raiting-one{
     grid-column: 5/7;
     grid-row: 1;
     padding-bottom: 6px;
     text-decoration: underline dotted;
+    width: 30%;
 }
 .sorting-buttons-up,
 .sorting-buttons-down
@@ -975,47 +980,69 @@ fieldset {
     border:0 none;
  }
 /*!ТРЕУГОЛЬНИКИ!*/
-#raise::after{
+.sorting-buttons-up{
+    width: 1px;
+    height: 1px;
+}
+.sorting-buttons-up::after{
     content: "";
     position: absolute;
     width: 10px;
     height: 11px;
     background-image: url("../img/icon-up.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-#low::after{
+.sorting-buttons-down::after{
     content: "";
     position: absolute;
     width: 10px;
     height: 11px;
     background-image: url("../img/icon-down.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-#raise::after:hover{
+.sorting-buttons-up:hover::after{
     content: "";
     position: absolute;
     width: 10px;
     height: 11px;
     background-image: url("../img/icon-uphover.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-#low::after:hover{
+.sorting-buttons-down:hover::after{
     content: "";
     position: absolute;
     width: 10px;
     height: 11px;
     background-image: url("../img/icon-downhover.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-.sortPriceFrom::after:active{
+.sorting-buttons-up:active::after{
     content: "";
     position: absolute;
     width: 10px;
     height: 11px;
-    background-image: url("../img/icon-uphover.svg");
+    background-image: url("../img/icon-upactive.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-.sortPriceTo::after:active{
+.sorting-buttons-down:active::after{
     content: "";
     position: absolute;
     width: 10px;
     height: 11px;
-    background-image: url("../img/icon-downhover.svg");
+    background-image: url("../img/icon-downactive.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 /*СЕКЦИЯ ОТЕЛЕЙ*/
 .hotels-navigation{
@@ -1078,8 +1105,28 @@ fieldset {
     justify-self: center;
 }
 .starIcon{
-    grid-column: 4;
-    grid-row: 1;
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px;
+    grid-template-rows: 1;
+    align-self: center;
+    justify-content: right;
+    margin-right: 75px;
+}
+.starIcon-two{
+    display: grid;
+    grid-template-columns: 20px 20px;
+    grid-template-rows: 1;
+    align-self: center;
+    justify-content: right;
+    margin-right: 75px;
+}
+.starIcon-three{
+    display: grid;
+    grid-template-columns: 20px 20px 20px;
+    grid-template-rows: 1;
+    align-self: center;
+    justify-content: right;
+    margin-right: 75px;
 }
 .ratingStars{
     grid-column: 4;
@@ -1087,6 +1134,21 @@ fieldset {
     align-self: center;
     justify-self: right;
     margin-right: 73px;
+}
+/*ЗВЁЗДЫ*/
+.star-Icon{
+    width: 20px;
+    height: 20px;
+}
+.star-Icon::after{
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 17px;
+    background-image: url("../img/star.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 /*ЗАГОЛОВКИ ОТЕЛЕЙ*/
 h3.hotel{
