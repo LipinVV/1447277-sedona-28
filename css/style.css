@@ -417,12 +417,19 @@ button.searching:active{
 }
 .dates{
     background-color: var(--basic-lightgrey);
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--basic-black);
     width: 346px;
     height: 38px;
     border: 0px;
+}
+/*PLACEHOLDER В ФОРМЕ*/
+.inputs-one input::placeholder,
+.inputs-two input::placeholder{
+    padding-left: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
     text-transform: uppercase;
 }
 .dates-labels-one,
@@ -438,6 +445,9 @@ button.searching:active{
     text-transform: uppercase;
     color: var(--basic-black);
     text-align: left;
+}
+.dates-labels-adults{
+    padding-right: 5px;
 }
 .dates-labels-one,
 .dates-labels-two
@@ -546,7 +556,7 @@ button.searching:active{
 /*ПОЛЕ FOOTER*/
 .links_and_information{
     width: 1200px;
-    background-color: var(--basic-white);
+    background: rgba(255, 255, 255, 0.9);
     margin: 0 auto;
 }
 .footer-wrap{
@@ -752,6 +762,31 @@ button.searching:active{
     padding: 0;
     padding-left: 285px;
 }
+.priceperday {
+    width: 24%;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    border: none;
+    background: none;
+    text-align: left;
+    padding-left: 5px;
+}
+.thirdline::after{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    height: 22px;
+    content: "";
+    border: 1px solid var(--basic-white);  
+}
+.pricePerDay input::placeholder{
+    color: var(--basic-white);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
 .white-font{
     position: relative;
     display: flex;
@@ -773,6 +808,9 @@ button.searching:active{
     line-height: 21px;
     text-transform: uppercase;
     color: var(--basic-white);
+    width: 24%;
+    justify-content: flex-end;
+    align-items: center;
 }
 .firstline,
 .secondline{
@@ -784,9 +822,53 @@ button.searching:active{
     padding-left: 23px;
 }
 .thirdline{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    height: 32px;
+    margin-bottom: 20px;
+    width: 317px;
+    justify-content: center;
+}
+.sortPriceFrom{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: var(--basic-white);
+    border-radius: 100%;
+    position: absolute;
+    top: 160px;
+}
+.sortPriceTo{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: var(--basic-white);
+    border-radius: 100%;
+    position: absolute;
+    top: 160px;
+    right: 42px;
+}
+.sortPriceFrom:hover{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-color: var(--basic-white);
+    border-radius: 100%;
+    position: absolute;
+    top: 158px;
+}
+.sortPriceTo:hover{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-color: var(--basic-white);
+    border-radius: 100%;
+    position: absolute;
+    top: 158px;
+    right: 42px;
 }
 .sortingPrices{
     height: 2px;
@@ -794,7 +876,7 @@ button.searching:active{
     margin: 0;
     margin-bottom: 33px;
     position: relative;
-    width: 316px;
+    width: 320px;
 }
 .sortingPrices::after{
     content: "";
@@ -803,7 +885,7 @@ button.searching:active{
     background-color: var(--basic-grey);
     top: 0;
     right: 0;
-    width: 40px;
+    width: 42px;
 }
 /*ЗАГОЛОВКИ СЕКЦИЙ БРОНИРОВАНИЯ*/
 .captions,
@@ -873,8 +955,9 @@ button.searching:active{
     text-transform: uppercase;
     align-self: end;
     justify-self: end;
-    margin-bottom: 32px;
-    margin-right: 168px;
+    bottom: 32px;
+    right: 168px;
+    padding: 0;
 }
 .show:hover{
     background-color: var(--basic-white);
@@ -954,9 +1037,7 @@ button.searching:active{
     line-height: 18px;
     text-transform: uppercase;
 }
-/*СОРТИРОВКА ПО ЦЕНЕ*/
-/*СОРТИРОВКА ПО ТИПУ*/
-/*СОРТИРОВКА ПО РЕЙТИНГУ*/
+/*СОРТИРОВКА ПО ЦЕНЕ, ТИПУ,РЕЙТИНГУ*/
 .price-one,
 .type-one,
 .raiting-one{
@@ -1187,7 +1268,7 @@ h3.hotel:active{
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 27px;
 }
 .more-info:hover{
     background-color: var(--basic-bluetwo);
@@ -1207,7 +1288,7 @@ h3.hotel:active{
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 27px;
 }
 .order-offer:hover{
     background-color: var(--basic-brown);
