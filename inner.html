@@ -58,28 +58,28 @@
       <fieldset class="pricePerDay">
         <h2 class="captions-two">Стоимость в сутки (р):</h2>
         <div class="thirdline">
-          <label class="white-font-two" for="priceFrom"></label>
+          <label class="white-font-two" for="priceFrom"><span class="visually-hidden">стоимость в сутки от</span></label>
           <input class="priceperday" type="text" name="priceFrom" id="priceFrom" placeholder="от 0">
-          <label class="white-font-two" for="priceTo"></label>
+          <label class="white-font-two" for="priceTo"><span class="visually-hidden">стоимость в сутки до</span></label>
           <input class="priceperday" type="text" name="priceTo" id="priceTo" placeholder="до 3000">
         </div>
         <div class="equalizer">
           <div class="sortingPrices"></div>
           <span class="sortPriceFrom"></span>
           <span class="sortPriceTo"></span>
+          <button class="show" type="submit">Показать</button>
         </div>
-        <button class="show" type="submit">Показать</button>
       </fieldset>
     </form>
     <div class="sortingBox">
       <p class="found">Найдено: 3</p>
       <p class="sortings">Сортировка:</p>
-      <a class="price-one" active href="#">По цене</a>
+      <a class="price-one active" href="#">По цене</a>
       <a class="type-one" href="#">По типу</a>
       <a class="raiting-one" href="#">По рейтингу</a>
       <button class="sorting-buttons-up" type="button" id="raise"><span class="visually-hidden">сортировка по
           возрастанию</span></button>
-      <button class="sorting-buttons-down" active type="button" id="low"><span class="visually-hidden">сортировка по
+      <button class="sorting-buttons-down active" type="button" id="low"><span class="visually-hidden">сортировка по
           убыванию</span></button>
     </div>
     <section class="hotels">

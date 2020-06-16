@@ -389,6 +389,7 @@ button.searching:active{
     margin-bottom: 78px;
     left: 50%;
     transform: translateX(-50%);
+    border: 2px transparent;
 }
 .locationMap{
     background-image: url("../img/map.png");
@@ -547,7 +548,11 @@ textarea:focus, input:focus, .reducePeople,
 .addPeople:active::before{
     content: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z' fill='%2381B3D2'/%3E%3C/svg%3E%0A");
 }
-
+#checkInDate::placeholder,
+#checkOutDate::placeholder
+{
+    line-height: 38px;
+}
 /*КНОПКА "НАЙТИ"*/
 .findHotel{
     background-color: var(--basic-blue);
@@ -795,13 +800,13 @@ textarea:focus, input:focus, .reducePeople,
     position: relative;
 }
 .priceperday {
-    width: 24%;
+    width: 50%;
     margin: 0;
     padding: 0;
     height: 30px;
     border: none;
     background: none;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
 }
 .thirdline::after{
@@ -817,7 +822,7 @@ textarea:focus, input:focus, .reducePeople,
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 30px;
 }
 .white-font{
     position: relative;
@@ -836,12 +841,9 @@ textarea:focus, input:focus, .reducePeople,
     flex-wrap: wrap;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
     text-transform: uppercase;
     color: var(--basic-white);
-    width: 5%;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 .firstline,
@@ -866,6 +868,9 @@ textarea:focus, input:focus, .reducePeople,
 }
 .equalizer{
     position: relative;
+    width: 317px;
+    display: grid;
+    align-items: center;
 }
 .sortingPrices{
     position: absolute;
@@ -887,7 +892,7 @@ textarea:focus, input:focus, .reducePeople,
     border-radius: 100%;
     position: absolute;
     top: -8px;
-    right: 155px;
+    right: 40px;
 }
 .sortPriceFrom:hover{
     width: 24px;
@@ -906,7 +911,7 @@ textarea:focus, input:focus, .reducePeople,
     border-radius: 100%;
     position: absolute;
     top: -10px;
-    right: 155px;
+    right: 40px;
 }
 .sortingPrices{
     height: 2px;
@@ -990,8 +995,8 @@ textarea:focus, input:focus, .reducePeople,
     color: var(--basic-white);
     background-color: transparent;
     text-transform: uppercase;
-    margin-left: 100px;
     margin-bottom: 40px;
+    justify-self: center;
 }
 .show:hover{
     background-color: var(--basic-white);
