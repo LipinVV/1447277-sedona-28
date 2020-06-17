@@ -858,13 +858,13 @@ textarea:focus, input:focus, .reducePeople,
     display: grid;
     margin: 0;
     padding: 0;
-    padding-left: 135px;
+    padding-left: 86px;
 }
 .pricePerDay{
     display: grid;
     margin: 0;
     padding: 0;
-    padding-left: 285px;
+    padding-left: 330px;
     position: relative;
 }
 .priceperday {
@@ -876,12 +876,14 @@ textarea:focus, input:focus, .reducePeople,
     background: none;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 1px;
+    padding-left: 4px;
 }
 .thirdline::after{
     position: absolute;
     top: 5px;
     left: 50%;
-    height: 22px;
+    height: 24px;
     content: "";
     border: 1px solid var(--basic-white);  
 }
@@ -902,7 +904,7 @@ textarea:focus, input:focus, .reducePeople,
     line-height: 21px;
     text-transform: uppercase;
     color: var(--basic-white);
-    padding-left: 14px;
+    padding-left: 15px;
 }
 .white-font-two{
     display: flex;
@@ -921,7 +923,13 @@ textarea:focus, input:focus, .reducePeople,
     justify-content: flex-start;
     padding-bottom: 25px;
     position: relative;
-    padding-left: 23px;
+    padding-left: 24px;
+}
+.secondline{
+    padding-left: 29px;
+}
+.firstline{
+    padding-left: 26px;
 }
 .thirdline{
     position: relative;
@@ -929,7 +937,7 @@ textarea:focus, input:focus, .reducePeople,
     flex-wrap: wrap;
     border: 2px solid #ffffff;
     border-radius: 2px;
-    height: 32px;
+    height: 38px;
     margin-bottom: 20px;
     width: 317px;
     justify-content: space-evenly;
@@ -940,9 +948,6 @@ textarea:focus, input:focus, .reducePeople,
     display: grid;
     align-items: center;
 }
-.sortingPrices{
-    position: absolute;
-}
 .sortPriceFrom{
     width: 20px;
     height: 20px;
@@ -950,7 +955,7 @@ textarea:focus, input:focus, .reducePeople,
     background-color: var(--basic-white);
     border-radius: 100%;
     position: absolute;
-    top: -8px;
+    top: -10px;
 }
 .sortPriceTo{
     width: 20px;
@@ -959,8 +964,8 @@ textarea:focus, input:focus, .reducePeople,
     background-color: var(--basic-white);
     border-radius: 100%;
     position: absolute;
-    top: -8px;
-    right: 40px;
+    top: -10px;
+    right: 45px;
 }
 .sortPriceFrom:hover{
     width: 24px;
@@ -969,7 +974,7 @@ textarea:focus, input:focus, .reducePeople,
     background-color: var(--basic-white);
     border-radius: 100%;
     position: absolute;
-    top: -10px;
+    top: -12px;
 }
 .sortPriceTo:hover{
     width: 24px;
@@ -978,7 +983,7 @@ textarea:focus, input:focus, .reducePeople,
     background-color: var(--basic-white);
     border-radius: 100%;
     position: absolute;
-    top: -10px;
+    top: -12px;
     right: 40px;
 }
 .sortingPrices{
@@ -987,7 +992,7 @@ textarea:focus, input:focus, .reducePeople,
     margin: 0;
     margin-bottom: 33px;
     position: relative;
-    width: 320px;
+    width: 317px;
 }
 .sortingPrices::after{
     content: "";
@@ -1012,6 +1017,9 @@ textarea:focus, input:focus, .reducePeople,
     padding-top: 26px;
     padding-bottom: 24px;
 }
+.captions{
+    padding-left: 0px;
+}
 .captions-two{
     font-style: normal;
     font-weight: bold;
@@ -1033,7 +1041,7 @@ textarea:focus, input:focus, .reducePeople,
     right: 100%;
     top: 50%;
     transform: translateY(-50%);
-    width: 23px;
+    width: 27px;
     height: 23px;
     background-image: url("../img/checkbox-calm.svg");
     background-repeat: no-repeat;
@@ -1065,6 +1073,8 @@ textarea:focus, input:focus, .reducePeople,
     text-transform: uppercase;
     margin-bottom: 40px;
     justify-self: center;
+    margin-right: 9px;
+    padding-bottom: 3px;
 }
 .show:hover{
     background-color: var(--basic-white);
@@ -1084,7 +1094,7 @@ textarea:focus, input:focus, .reducePeople,
     width: 100%;
     height: 86px;
     display: grid;
-    grid-template-columns: 20% 9.5% 6.5% 6.5% 18.5% 39%;
+    grid-template-columns: 200px 100px 100px 100px 400px 300px;
     align-items: center;
     justify-content: center;
 }
@@ -1092,20 +1102,23 @@ textarea:focus, input:focus, .reducePeople,
     grid-column: 1/7;
     grid-row: 1;
     padding-left: 73px;
-    width: 16%;
-    
 }
 .sortings{
     grid-column: 2/7;
     grid-row: 1;
     padding-bottom: 6px;
-    width: 11%;
+    padding-left: 37px;
 }
 .price-one{
     grid-column: 3/7;
     grid-row: 1;
-    padding-bottom: 6px;
-    width: 9%;
+    padding-bottom: 5px;
+    padding-left: 52px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--basic-blue);
 }
 .active{
     color: var(--basic-blue);
@@ -1115,14 +1128,24 @@ textarea:focus, input:focus, .reducePeople,
     grid-row: 1;
     padding-bottom: 6px;
     text-decoration: underline dotted;
-    width: 10%;
+    padding-left: 32px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    width: 100px;
 }
 .raiting-one{
     grid-column: 5/7;
     grid-row: 1;
-    padding-bottom: 6px;
+    padding-bottom: 5px;
+    padding-left: 15px;
     text-decoration: underline dotted;
-    width: 30%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    width: 400px;
 }
 .sorting-buttons-up,
 .sorting-buttons-down
@@ -1132,9 +1155,11 @@ textarea:focus, input:focus, .reducePeople,
 }
 .sorting-buttons-up{
     justify-self: right;
-    margin-right: 85px;
+    margin-right: 92px;
+    margin-top: 2px;
 }
 .sorting-buttons-down{
+    margin-top: 2px;
     justify-self: right;
     margin-right: 73px;
 }
@@ -1148,7 +1173,6 @@ textarea:focus, input:focus, .reducePeople,
     text-transform: uppercase;
 }
 /*СОРТИРОВКА ПО ЦЕНЕ, ТИПУ,РЕЙТИНГУ*/
-.price-one,
 .type-one,
 .raiting-one{
     opacity: 0.3;
@@ -1230,10 +1254,12 @@ fieldset {
 .hotels-navigation{
     display: grid;
     padding-left: 0;
+    margin: 0;
 }
 .hotels-navigation li{
     width: 1200px;
     height: 150px;
+    padding-top: 25px;
 }
 .hotels{
     display: grid;
@@ -1243,14 +1269,15 @@ fieldset {
     width: 1200px;
     height: 150px;
     display: grid;
-    grid-template-columns: 20% 9% 13% 58%;
-    grid-template-rows: 20% 20% 20%;
+    grid-template-columns: 19% 9% 14% 58%;
+    grid-template-rows: 33% 33% 33%;
 }
 .hotel-img{
     grid-column: 1;
     grid-row: 1/4;
     justify-self: end;
-    padding-right: 30px;
+    padding-right: 20px;
+    padding-top: 5px;
 }
 .hotel{
     grid-column: 2/4;
@@ -1264,7 +1291,8 @@ fieldset {
     grid-row: 2;
     align-self: center;
     justify-self: left;
-    margin: 0;
+    margin-bottom: 75px;
+    margin-left: 8px;
 }
 .price{
     grid-column: 3;
@@ -1272,7 +1300,9 @@ fieldset {
     align-self: center;
     justify-self: left;
     padding-left: 7px;
-    margin: 0;
+    margin-bottom: 77px;
+    margin-left: 9px;
+
 }
 .more-info{
     grid-column: 2;
@@ -1285,30 +1315,37 @@ fieldset {
     grid-row: 3;
     align-self: center;
     justify-self: center;
+    margin-bottom: 80px;
+    margin-left: 7px;
 }
 .starIcon{
     display: grid;
-    grid-template-columns: 20px 20px 20px 20px;
+    grid-template-columns: 25px 25px 25px 25px;
     grid-template-rows: 1;
     align-self: center;
     justify-content: right;
-    margin-right: 75px;
+    margin-right: 64px;
+    padding-bottom: 20px;
 }
 .starIcon-two{
     display: grid;
-    grid-template-columns: 20px 20px;
+    grid-template-columns: 24px 24px 24px;
     grid-template-rows: 1;
     align-self: center;
     justify-content: right;
-    margin-right: 75px;
+    margin-right: 64px;
+    padding-bottom: 20px;
+    padding-right: 2px;
 }
 .starIcon-three{
     display: grid;
-    grid-template-columns: 20px 20px 20px;
+    grid-template-columns: 25px 25px;
     grid-template-rows: 1;
     align-self: center;
     justify-content: right;
-    margin-right: 75px;
+    margin-right: 64px;
+    padding-bottom: 20px;
+    padding-right: 0px;
 }
 .ratingStars{
     grid-column: 4;
@@ -1316,6 +1353,7 @@ fieldset {
     align-self: center;
     justify-self: right;
     margin-right: 73px;
+    margin-bottom: 80px;
     display: block;
     width: 110px;
     height: 27px;
@@ -1351,6 +1389,7 @@ h3.hotel{
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
+    padding-left: 8px;
 }
 h3.hotel:hover{
     color: var(--basic-blue);
@@ -1381,6 +1420,8 @@ h3.hotel:active{
     font-weight: bold;
     font-size: 14px;
     line-height: 27px;
+    margin-left: 9px;
+    margin-bottom: 80px;
 }
 .more-info:hover{
     background-color: var(--basic-bluetwo);
@@ -1408,4 +1449,7 @@ h3.hotel:active{
 .order-offer:active{
     background-color: var(--basic-browny);
     color: var(--basic-white-opy-03);
+}
+.links-1{
+    padding-top: 3px;
 }
