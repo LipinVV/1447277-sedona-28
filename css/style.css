@@ -849,13 +849,15 @@ textarea:focus, input:focus, .reducePeople,
     height: 217px;
 }
 .infrastructure{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     padding-left: 72px;
 }
 .typeOfApartment{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     padding-left: 86px;
@@ -921,15 +923,16 @@ textarea:focus, input:focus, .reducePeople,
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-bottom: 25px;
-    position: relative;
-    padding-left: 24px;
+    margin: 0;
+    padding: 0;
 }
 .secondline{
     padding-left: 29px;
+    padding-bottom: 25px;
 }
 .firstline{
     padding-left: 26px;
+    padding-bottom: 25px;
 }
 .thirdline{
     position: relative;
@@ -1014,8 +1017,8 @@ textarea:focus, input:focus, .reducePeople,
     text-transform: uppercase;
     color: var(--basic-white);
     margin: 0;
-    padding-top: 26px;
-    padding-bottom: 24px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .captions{
     padding-left: 0px;
