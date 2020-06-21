@@ -1,6 +1,7 @@
     var button = document.querySelector(".searching");
     var loginpopup = document.querySelector(".hotel-search");
     var opened = false;
+    var form = document.querySelector("form");
 
     button.addEventListener("click", function(event) {
     if (!opened) {
