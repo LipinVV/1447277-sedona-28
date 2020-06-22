@@ -1,29 +1,28 @@
-    var button = document.querySelector(".searching");
-    var loginpopup = document.querySelector(".hotel-search");
-    var opened = false;
-    var form = document.querySelector(".hotel-search");
-    var checker = loginpopup.querySelector(".dates-labels-one");
-    var checherTwo = loginpopup.querySelector(".dates");
+var button = document.querySelector(".searching");
+var form = document.querySelector(".hotel-search");
+var opened = false;
+var checkIn = document.querySelector("#check-in-date");
+var checkOut = document.querySelector("#check-out-date");
 
-    button.addEventListener("click", function(event) {
+button.addEventListener("click", function(event) {
     if (!opened) {
         event.preventDefault();
-        loginpopup.classList.add("hotel-search-show");
+        form.classList.add("hotel-search-show");
         opened = true;
     } else if (opened) {
         event.preventDefault();
-        loginpopup.classList.remove("hotel-search-show");
+        form.classList.remove("hotel-search-show");
         opened = false;
     }
+});
 
-    form.addEventListener("submit", function (evt) {
-        if (!checker.value || dates.value) {
-            evt.preventDefault();
-            loginpopup.classList.add("modal-error");
-        } else {
-            if (isStorageSupport) {
-                localStorage.setItem("input", dates-labels-one.value)
-            }
-        }
-    })
+form.addEventListener("submit", function(evt) {
+    if (!checkIn.value || !checkOut.value) {
+        evt.preventDefault();
+        form.classList.remove("modal-error");
+        form.offsetWidth = form.offsetWidth;
+        form.classList.add("modal-error");
+    } else {
+
+    }
 });

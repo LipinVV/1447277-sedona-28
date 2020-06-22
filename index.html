@@ -13,8 +13,8 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <img class="logo-img" src="img/logo.svg" aria-label="логотип Седоны" alt="Sedona's logo" width="138" height="70"
-        alt="Sedona's logo">
+      <a class="logotype" href="#"><img class="logo-img" src="img/logo.svg"
+        aria-label="ссылка на главную страницу" width="138" height="70" alt="Sedona's logo"></a>
       <ul class="site-navigation">
         <li><a class="nav-link" href="">Информация</a></li>
         <li><a class="nav-link" href="">Фото и видео</a></li>
@@ -90,22 +90,22 @@
       <form class="hotel-search" action="https://echo.htmlacademy.ru/" method="post">
         <p class="inputs-one">
           <label class="dates-labels-one" for="check-in-date">Дата заезда:</label>
-          <input class="dates" type="text" name="check-in-date" id="check-in-date" placeholder="24 апреля 2017" required>
+          <input class="dates" type="text" name="check-in-date" id="check-in-date" placeholder="24 апреля 2017">
           <span class="icon-calendar"></span>
         </p>
         <p class="inputs-two">
           <label class="dates-labels-two" for="check-out-date">Дата выезда:</label>
-          <input class="dates" type="text" name="check-out-date" id="check-out-date" placeholder="4 июля 2017" required>
+          <input class="dates" type="text" name="check-out-date" id="check-out-date" placeholder="4 июля 2017">
           <span class="icon-calendar"></span>
         </p>
         <p class="kinds">
           <label class="dates-labels-adults" for="adults">Взрослые:</label>
           <button type="button" class="reduce-people"><span class="visually-hidden">уменьшить на единицу</span></button>
-          <input class="count" type="text" name="adults" id="adults" placeholder="2" required>
+          <input class="count" type="text" name="adults" id="adults" placeholder="2">
           <button type="button" class="add-people"><span class="visually-hidden">увеличить на единицу</span></button>
           <label class="dates-labels-children" for="children">Дети:</label>
           <button type="button" class="reduce-people"><span class="visually-hidden">уменьшить на единицу</span></button>
-          <input class="count" type="text" name="children" id="children" placeholder="0" required>
+          <input class="count" type="text" name="children" id="children" placeholder="0">
           <button type="button" class="add-people"><span class="visually-hidden">увеличить на единицу</span></button>
         </p>
         <button class="find-hotel" type="submit">Найти</button>
