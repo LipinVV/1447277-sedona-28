@@ -3,6 +3,7 @@ var form = document.querySelector(".hotel-search");
 var opened = false;
 var checkIn = document.querySelector("#check-in-date");
 var checkOut = document.querySelector("#check-out-date");
+var number = document.querySelector(".count");
 
 button.addEventListener("click", function(event) {
     if (!opened) {
@@ -17,7 +18,7 @@ button.addEventListener("click", function(event) {
 });
 
 form.addEventListener("submit", function(evt) {
-    if (!checkIn.value || !checkOut.value) {
+    if (!checkIn.value || !checkOut.value || !number.value) {
         evt.preventDefault();
         form.classList.remove("modal-error");
         form.offsetWidth = form.offsetWidth;

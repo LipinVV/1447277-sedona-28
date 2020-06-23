@@ -1,0 +1,4 @@
+var button = document.querySelector(".searching"), form = document.querySelector(".hotel-search"), opened = !1, checkIn = document.querySelector("#check-in-date"), checkOut = document.querySelector("#check-out-date"), number = document.querySelector(".count"); button.addEventListener("click", function (e) {
+    opened ? opened && (e.preventDefault(), form.classList.remove("hotel-search-show"), opened = !1) : (e.preventDefault(), form.classList.add("hotel-search-show"),
+        opened = !0)
+}), form.addEventListener("submit", function (e) { checkIn.value && checkOut.value && number.value || (e.preventDefault(), form.classList.remove("modal-error"), form.offsetWidth, form.classList.add("modal-error")) })
