@@ -451,10 +451,6 @@ button.searching:active {
         transform: translateX(10px);
     }
 }
-.modal-error {
-    animation-name: shake;
-    animation-duration: 0.6s;
-}
 .hotel-search-show{
     display: flex;
     animation-name: bounce;
@@ -1414,4 +1410,8 @@ h3.hotel:active {
 .price-one:focus
 {
     outline: var(--basic-black) auto 1px; 
+}
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
 }
